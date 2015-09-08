@@ -1,0 +1,128 @@
+﻿Build started 07.09.2015 20:52:47.
+     1>Project "C:\Users\Felix\Documents\cmakeExperiments\glstuff\external\FreeImage\FreeImage.2013.vcxproj" on node 3 (Build target(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\CL.exe /c /ISource /ISource\ZLib /ISource\DeprecationManager /ISource\OpenEXR /ISource\OpenEXR\Half /ISource\OpenEXR\Iex /ISource\OpenEXR\IlmImf /ISource\OpenEXR\Imath /ISource\OpenEXR\IlmThread /ISource\LibJXR\jxrgluelib /ISource\LibJXR\image\sys /nologo /W3 /WX- /O2 /Ob1 /Oi /Ot /Oy /GL /D WIN32 /D NDEBUG /D _WINDOWS /D _USRDLL /D OPJ_STATIC /D FREEIMAGE_EXPORTS /D _CRT_SECURE_NO_DEPRECATE /D LIBRAW_NODLL /D _VC80_UPGRADE=0x0710 /D _WINDLL /D _MBCS /GF /Gm- /EHsc /MT /Zp16 /GS- /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo".\Win32\Release\\" /Fd".\Win32\Release\vc140.pdb" /Gd /TP /analyze- /errorReport:prompt Source\FreeImage\BitmapAccess.cpp Source\FreeImage\ColorLookup.cpp Source\FreeImage\ConversionRGBA16.cpp Source\FreeImage\ConversionRGBAF.cpp Source\FreeImage\FreeImage.cpp Source\FreeImage\FreeImageIO.cpp Source\FreeImage\GetType.cpp Source\FreeImage\LFPQuantizer.cpp Source\FreeImage\MemoryIO.cpp Source\FreeImage\PixelAccess.cpp Source\FreeImage\J2KHelper.cpp Source\FreeImage\MNGHelper.cpp Source\FreeImage\Plugin.cpp Source\FreeImage\PluginBMP.cpp Source\FreeImage\PluginCUT.cpp Source\FreeImage\PluginDDS.cpp Source\FreeImage\PluginEXR.cpp Source\FreeImage\PluginG3.cpp Source\FreeImage\PluginGIF.cpp Source\FreeImage\PluginHDR.cpp Source\FreeImage\PluginICO.cpp Source\FreeImage\PluginIFF.cpp Source\FreeImage\PluginJ2K.cpp Source\FreeImage\PluginJNG.cpp Source\FreeImage\PluginJP2.cpp Source\FreeImage\PluginJPEG.cpp Source\FreeImage\PluginJXR.cpp Source\FreeImage\PluginKOALA.cpp Source\FreeImage\PluginMNG.cpp Source\FreeImage\PluginPCD.cpp Source\FreeImage\PluginPCX.cpp Source\FreeImage\PluginPFM.cpp Source\FreeImage\PluginPICT.cpp Source\FreeImage\PluginPNG.cpp Source\FreeImage\PluginPNM.cpp Source\FreeImage\PluginPSD.cpp Source\FreeImage\PluginRAS.cpp Source\FreeImage\PluginRAW.cpp Source\FreeImage\PluginSGI.cpp Source\FreeImage\PluginTARGA.cpp Source\FreeImage\PluginTIFF.cpp Source\FreeImage\PluginWBMP.cpp Source\FreeImage\PluginWebP.cpp Source\FreeImage\PluginXBM.cpp Source\FreeImage\PluginXPM.cpp Source\FreeImage\PSDParser.cpp Source\FreeImage\TIFFLogLuv.cpp Source\FreeImage\Conversion.cpp Source\FreeImage\Conversion16_555.cpp Source\FreeImage\Conversion16_565.cpp Source\FreeImage\Conversion24.cpp Source\FreeImage\Conversion32.cpp Source\FreeImage\Conversion4.cpp Source\FreeImage\Conversion8.cpp Source\FreeImage\ConversionFloat.cpp Source\FreeImage\ConversionRGB16.cpp Source\FreeImage\ConversionRGBF.cpp Source\FreeImage\ConversionType.cpp Source\FreeImage\ConversionUINT16.cpp Source\FreeImage\Halftoning.cpp Source\FreeImage\tmoColorConvert.cpp Source\FreeImage\tmoDrago03.cpp Source\FreeImage\tmoFattal02.cpp Source\FreeImage\tmoReinhard05.cpp Source\FreeImage\ToneMapping.cpp Source\FreeImage\NNQuantizer.cpp Source\FreeImage\WuQuantizer.cpp Source\DeprecationManager\Deprecated.cpp Source\DeprecationManager\DeprecationMgr.cpp Source\FreeImage\CacheFile.cpp Source\FreeImage\MultiPage.cpp Source\FreeImage\ZLibInterface.cpp Source\Metadata\Exif.cpp Source\Metadata\FIRational.cpp Source\Metadata\FreeImageTag.cpp Source\Metadata\IPTC.cpp Source\Metadata\TagConversion.cpp Source\Metadata\TagLib.cpp Source\Metadata\XTIFF.cpp Source\FreeImageToolkit\Background.cpp Source\FreeImageToolkit\BSplineRotate.cpp Source\FreeImageToolkit\Channels.cpp Source\FreeImageToolkit\ClassicRotate.cpp Source\FreeImageToolkit\Colors.cpp Source\FreeImageToolkit\CopyPaste.cpp Source\FreeImageToolkit\Display.cpp Source\FreeImageToolkit\Flip.cpp Source\FreeImageToolkit\JPEGTransform.cpp Source\FreeImageToolkit\MultigridPoissonSolver.cpp Source\FreeImageToolkit\Rescale.cpp Source\FreeImageToolkit\Resize.cpp
+         BitmapAccess.cpp
+         ColorLookup.cpp
+         ConversionRGBA16.cpp
+         ConversionRGBAF.cpp
+         FreeImage.cpp
+         FreeImageIO.cpp
+         GetType.cpp
+         LFPQuantizer.cpp
+         MemoryIO.cpp
+         PixelAccess.cpp
+         J2KHelper.cpp
+         MNGHelper.cpp
+         Plugin.cpp
+         PluginBMP.cpp
+         PluginCUT.cpp
+         PluginDDS.cpp
+         PluginEXR.cpp
+         PluginG3.cpp
+     1>C:\Program Files (x86)\Windows Kits\10\Include\10.0.10150.0\ucrt\stdio.h(1925): warning C4005: 'snprintf': macro redefinition
+         c:\users\felix\documents\cmakeexperiments\glstuff\external\freeimage\source\libtiff4\tif_config.h(84): note: see previous definition of 'snprintf'
+     1>C:\Program Files (x86)\Windows Kits\10\Include\10.0.10150.0\ucrt\stdio.h(1927): fatal error C1189: #error:  Macro definition of snprintf conflicts with Standard Library function declaration
+         PluginGIF.cpp
+         PluginHDR.cpp
+         Compiling...
+         PluginICO.cpp
+         PluginIFF.cpp
+         PluginJ2K.cpp
+         PluginJNG.cpp
+         PluginJP2.cpp
+         PluginJPEG.cpp
+         PluginJXR.cpp
+         PluginKOALA.cpp
+         PluginMNG.cpp
+         PluginPCD.cpp
+         PluginPCX.cpp
+         PluginPFM.cpp
+         PluginPICT.cpp
+         PluginPNG.cpp
+         PluginPNM.cpp
+         PluginPSD.cpp
+         PluginRAS.cpp
+         PluginRAW.cpp
+         PluginSGI.cpp
+         PluginTARGA.cpp
+         Compiling...
+         PluginTIFF.cpp
+         PluginWBMP.cpp
+         PluginWebP.cpp
+         PluginXBM.cpp
+         PluginXPM.cpp
+         PSDParser.cpp
+         TIFFLogLuv.cpp
+         Conversion.cpp
+         Conversion16_555.cpp
+         Conversion16_565.cpp
+         Conversion24.cpp
+         Conversion32.cpp
+         Conversion4.cpp
+         Conversion8.cpp
+         ConversionFloat.cpp
+         ConversionRGB16.cpp
+         ConversionRGBF.cpp
+         ConversionType.cpp
+         ConversionUINT16.cpp
+         Halftoning.cpp
+         Compiling...
+         tmoColorConvert.cpp
+         tmoDrago03.cpp
+         tmoFattal02.cpp
+         tmoReinhard05.cpp
+         ToneMapping.cpp
+         NNQuantizer.cpp
+         WuQuantizer.cpp
+         Deprecated.cpp
+         DeprecationMgr.cpp
+         CacheFile.cpp
+         MultiPage.cpp
+         ZLibInterface.cpp
+         Exif.cpp
+         FIRational.cpp
+         FreeImageTag.cpp
+         IPTC.cpp
+         TagConversion.cpp
+     1>Source\Metadata\TagConversion.cpp(202): warning C4477: 'sprintf' : format string '%ld' requires an argument of type 'long', but variadic argument 1 has type 'UINT64'
+         Source\Metadata\TagConversion.cpp(202): note: consider using '%lld' in the format string
+         Source\Metadata\TagConversion.cpp(202): note: consider using '%I64d' in the format string
+     1>Source\Metadata\TagConversion.cpp(205): warning C4477: 'sprintf' : format string '%ld' requires an argument of type 'long', but variadic argument 1 has type 'UINT64'
+         Source\Metadata\TagConversion.cpp(205): note: consider using '%lld' in the format string
+         Source\Metadata\TagConversion.cpp(205): note: consider using '%I64d' in the format string
+     1>Source\Metadata\TagConversion.cpp(215): warning C4477: 'sprintf' : format string '%X' requires an argument of type 'unsigned int', but variadic argument 1 has type 'UINT64'
+         Source\Metadata\TagConversion.cpp(215): note: consider using '%llX' in the format string
+         Source\Metadata\TagConversion.cpp(215): note: consider using '%I64X' in the format string
+     1>Source\Metadata\TagConversion.cpp(218): warning C4477: 'sprintf' : format string '%X' requires an argument of type 'unsigned int', but variadic argument 1 has type 'UINT64'
+         Source\Metadata\TagConversion.cpp(218): note: consider using '%llX' in the format string
+         Source\Metadata\TagConversion.cpp(218): note: consider using '%I64X' in the format string
+     1>Source\Metadata\TagConversion.cpp(228): warning C4477: 'sprintf' : format string '%ld' requires an argument of type 'long', but variadic argument 1 has type 'INT64'
+         Source\Metadata\TagConversion.cpp(228): note: consider using '%lld' in the format string
+         Source\Metadata\TagConversion.cpp(228): note: consider using '%I64d' in the format string
+     1>Source\Metadata\TagConversion.cpp(231): warning C4477: 'sprintf' : format string '%ld' requires an argument of type 'long', but variadic argument 1 has type 'INT64'
+         Source\Metadata\TagConversion.cpp(231): note: consider using '%lld' in the format string
+         Source\Metadata\TagConversion.cpp(231): note: consider using '%I64d' in the format string
+         TagLib.cpp
+         XTIFF.cpp
+     1>C:\Program Files (x86)\Windows Kits\10\Include\10.0.10150.0\ucrt\stdio.h(1925): warning C4005: 'snprintf': macro redefinition
+         c:\users\felix\documents\cmakeexperiments\glstuff\external\freeimage\source\libtiff4\tif_config.h(84): note: see previous definition of 'snprintf'
+     1>C:\Program Files (x86)\Windows Kits\10\Include\10.0.10150.0\ucrt\stdio.h(1927): fatal error C1189: #error:  Macro definition of snprintf conflicts with Standard Library function declaration
+         Background.cpp
+         Compiling...
+         BSplineRotate.cpp
+         Channels.cpp
+         ClassicRotate.cpp
+         Colors.cpp
+         CopyPaste.cpp
+         Display.cpp
+         Flip.cpp
+         JPEGTransform.cpp
+         MultigridPoissonSolver.cpp
+         Rescale.cpp
+         Resize.cpp
+     1>Done Building Project "C:\Users\Felix\Documents\cmakeExperiments\glstuff\external\FreeImage\FreeImage.2013.vcxproj" (Build target(s)) -- FAILED.
+
+Build FAILED.
+
+Time Elapsed 00:00:38.84

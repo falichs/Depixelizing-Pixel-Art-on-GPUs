@@ -1,0 +1,110 @@
+﻿Build started 07.09.2015 20:51:19.
+     1>Project "C:\Users\Felix\Documents\cmakeExperiments\glstuff\external\FreeImage\Source\LibJPEG\LibJPEG.2013.vcxproj" on node 2 (Build target(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\CL.exe /c /I..\zlib /nologo /W3 /WX- /Ox /Ob1 /Oi /Ot /Oy /D WIN32 /D NDEBUG /D _LIB /D _CRT_SECURE_NO_DEPRECATE /D _VC80_UPGRADE=0x0710 /D _MBCS /GF /Gm- /EHsc /MT /GS- /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo".\Win32\Release\\" /Fd".\Win32\Release\LibJPEG.pdb" /Gd /TC /analyze- /errorReport:prompt jaricom.c jcapimin.c jcapistd.c jcarith.c jccoefct.c jccolor.c jcdctmgr.c jchuff.c jcinit.c jcmainct.c jcmarker.c jcmaster.c jcomapi.c jcparam.c jcprepct.c jcsample.c jctrans.c jdapimin.c jdapistd.c jdarith.c jdatadst.c jdatasrc.c jdcoefct.c jdcolor.c jddctmgr.c jdhuff.c jdinput.c jdmainct.c jdmarker.c jdmaster.c jdmerge.c jdpostct.c jdsample.c jdtrans.c jerror.c jfdctflt.c jfdctfst.c jfdctint.c jidctflt.c jidctfst.c jidctint.c jmemmgr.c jmemnobs.c jquant1.c jquant2.c jutils.c transupp.c
+         jaricom.c
+         jcapimin.c
+         jcapistd.c
+         jcarith.c
+         jccoefct.c
+         jccolor.c
+         jcdctmgr.c
+         jchuff.c
+         jcinit.c
+         jcmainct.c
+         jcmarker.c
+         jcmaster.c
+         jcomapi.c
+         jcparam.c
+         jcprepct.c
+         jcsample.c
+         jctrans.c
+         jdapimin.c
+         jdapistd.c
+         jdarith.c
+         Generating Code...
+         Compiling...
+         jdatadst.c
+         jdatasrc.c
+         jdcoefct.c
+         jdcolor.c
+         jddctmgr.c
+         jdhuff.c
+         jdinput.c
+         jdmainct.c
+         jdmarker.c
+         jdmaster.c
+         jdmerge.c
+         jdpostct.c
+         jdsample.c
+         jdtrans.c
+         jerror.c
+         jfdctflt.c
+         jfdctfst.c
+         jfdctint.c
+         jidctflt.c
+         jidctfst.c
+         Generating Code...
+         Compiling...
+         jidctint.c
+         jmemmgr.c
+         jmemnobs.c
+         jquant1.c
+         jquant2.c
+         jutils.c
+         transupp.c
+         Generating Code...
+       Lib:
+         C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\Lib.exe /OUT:".\Win32\Release\LibJPEG.lib" /NOLOGO /LTCG .\Win32\Release\jaricom.obj
+         .\Win32\Release\jcapimin.obj
+         .\Win32\Release\jcapistd.obj
+         .\Win32\Release\jcarith.obj
+         .\Win32\Release\jccoefct.obj
+         .\Win32\Release\jccolor.obj
+         .\Win32\Release\jcdctmgr.obj
+         .\Win32\Release\jchuff.obj
+         .\Win32\Release\jcinit.obj
+         .\Win32\Release\jcmainct.obj
+         .\Win32\Release\jcmarker.obj
+         .\Win32\Release\jcmaster.obj
+         .\Win32\Release\jcomapi.obj
+         .\Win32\Release\jcparam.obj
+         .\Win32\Release\jcprepct.obj
+         .\Win32\Release\jcsample.obj
+         .\Win32\Release\jctrans.obj
+         .\Win32\Release\jdapimin.obj
+         .\Win32\Release\jdapistd.obj
+         .\Win32\Release\jdarith.obj
+         .\Win32\Release\jdatadst.obj
+         .\Win32\Release\jdatasrc.obj
+         .\Win32\Release\jdcoefct.obj
+         .\Win32\Release\jdcolor.obj
+         .\Win32\Release\jddctmgr.obj
+         .\Win32\Release\jdhuff.obj
+         .\Win32\Release\jdinput.obj
+         .\Win32\Release\jdmainct.obj
+         .\Win32\Release\jdmarker.obj
+         .\Win32\Release\jdmaster.obj
+         .\Win32\Release\jdmerge.obj
+         .\Win32\Release\jdpostct.obj
+         .\Win32\Release\jdsample.obj
+         .\Win32\Release\jdtrans.obj
+         .\Win32\Release\jerror.obj
+         .\Win32\Release\jfdctflt.obj
+         .\Win32\Release\jfdctfst.obj
+         .\Win32\Release\jfdctint.obj
+         .\Win32\Release\jidctflt.obj
+         .\Win32\Release\jidctfst.obj
+         .\Win32\Release\jidctint.obj
+         .\Win32\Release\jmemmgr.obj
+         .\Win32\Release\jmemnobs.obj
+         .\Win32\Release\jquant1.obj
+         .\Win32\Release\jquant2.obj
+         .\Win32\Release\jutils.obj
+         .\Win32\Release\transupp.obj
+         LibJPEG.2013.vcxproj -> C:\Users\Felix\Documents\cmakeExperiments\glstuff\external\FreeImage\Source\LibJPEG\.\Win32\Release\LibJPEG.lib
+     1>Done Building Project "C:\Users\Felix\Documents\cmakeExperiments\glstuff\external\FreeImage\Source\LibJPEG\LibJPEG.2013.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:14.10

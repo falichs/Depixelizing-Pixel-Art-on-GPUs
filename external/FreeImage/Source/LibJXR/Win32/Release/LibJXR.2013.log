@@ -1,0 +1,60 @@
+﻿Build started 07.09.2015 20:51:32.
+     1>Project "C:\Users\Felix\Documents\cmakeExperiments\glstuff\external\FreeImage\Source\LibJXR\LibJXR.2013.vcxproj" on node 4 (Build target(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\CL.exe /c /I./image/sys /I./jxrgluelib /nologo /W3 /WX- /Ox /Ob1 /Oi /Ot /Oy /D WIN32 /D NDEBUG /D _LIB /D DISABLE_PERF_MEASUREMENT /D _MBCS /Gm- /EHsc /MT /GS- /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo".\Win32\Release\\" /Fd".\Win32\Release\LibJXR.pdb" /Gd /TC /analyze- /errorReport:prompt image\decode\decode.c image\decode\JXRTranscode.c image\decode\postprocess.c image\decode\segdec.c image\decode\strdec.c image\decode\strdec_x86.c image\decode\strInvTransform.c image\decode\strPredQuantDec.c image\encode\encode.c image\encode\segenc.c image\encode\strenc.c image\encode\strenc_x86.c image\encode\strFwdTransform.c image\encode\strPredQuantEnc.c image\sys\adapthuff.c image\sys\image.c image\sys\strcodec.c image\sys\strPredQuant.c image\sys\strTransform.c jxrgluelib\JXRGlue.c jxrgluelib\JXRGlueJxr.c jxrgluelib\JXRGluePFC.c jxrgluelib\JXRMeta.c
+         decode.c
+         JXRTranscode.c
+         postprocess.c
+         segdec.c
+         strdec.c
+         strdec_x86.c
+         strInvTransform.c
+         strPredQuantDec.c
+         encode.c
+         segenc.c
+         strenc.c
+         strenc_x86.c
+         strFwdTransform.c
+         strPredQuantEnc.c
+         adapthuff.c
+         image.c
+         strcodec.c
+         strPredQuant.c
+         strTransform.c
+         JXRGlue.c
+         Generating Code...
+         Compiling...
+         JXRGlueJxr.c
+         JXRGluePFC.c
+         JXRMeta.c
+         Generating Code...
+       Lib:
+         C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\Lib.exe /OUT:".\Win32\Release\LibJXR.lib" /NOLOGO /LTCG .\Win32\Release\decode.obj
+         .\Win32\Release\JXRTranscode.obj
+         .\Win32\Release\postprocess.obj
+         .\Win32\Release\segdec.obj
+         .\Win32\Release\strdec.obj
+         .\Win32\Release\strdec_x86.obj
+         .\Win32\Release\strInvTransform.obj
+         .\Win32\Release\strPredQuantDec.obj
+         .\Win32\Release\encode.obj
+         .\Win32\Release\segenc.obj
+         .\Win32\Release\strenc.obj
+         .\Win32\Release\strenc_x86.obj
+         .\Win32\Release\strFwdTransform.obj
+         .\Win32\Release\strPredQuantEnc.obj
+         .\Win32\Release\adapthuff.obj
+         .\Win32\Release\image.obj
+         .\Win32\Release\strcodec.obj
+         .\Win32\Release\strPredQuant.obj
+         .\Win32\Release\strTransform.obj
+         .\Win32\Release\JXRGlue.obj
+         .\Win32\Release\JXRGlueJxr.obj
+         .\Win32\Release\JXRGluePFC.obj
+         .\Win32\Release\JXRMeta.obj
+         LibJXR.2013.vcxproj -> C:\Users\Felix\Documents\cmakeExperiments\glstuff\external\FreeImage\Source\LibJXR\.\Win32\Release\LibJXR.lib
+     1>Done Building Project "C:\Users\Felix\Documents\cmakeExperiments\glstuff\external\FreeImage\Source\LibJXR\LibJXR.2013.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:17.94

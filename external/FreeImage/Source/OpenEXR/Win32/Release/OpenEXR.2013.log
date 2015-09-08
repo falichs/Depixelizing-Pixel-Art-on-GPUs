@@ -1,0 +1,396 @@
+﻿Build started 07.09.2015 20:51:26.
+     1>Project "C:\Users\Felix\Documents\cmakeExperiments\glstuff\external\FreeImage\Source\OpenEXR\OpenEXR.2013.vcxproj" on node 3 (Build target(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\CL.exe /c /I./ /I./IlmImf /I./Imath /I./IexMath /I./Iex /I./Half /I./IlmThread /I../ZLib /nologo /W3 /WX- /O1 /Ob1 /Oi /Ot /Oy /D WIN32 /D NDEBUG /D _LIB /D _CRT_SECURE_NO_DEPRECATE /D _VC80_UPGRADE=0x0710 /D _MBCS /GF /Gm- /EHsc /MT /GS /Gy- /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo".\Win32\Release\\" /Fd".\Win32\Release\OpenEXR.pdb" /Gd /TP /analyze- /errorReport:prompt IexMath\IexMathFpu.cpp IlmImf\b44ExpLogTable.cpp IlmImf\ImfAcesFile.cpp IlmImf\ImfAttribute.cpp IlmImf\ImfB44Compressor.cpp IlmImf\ImfBoxAttribute.cpp IlmImf\ImfChannelList.cpp IlmImf\ImfChannelListAttribute.cpp IlmImf\ImfChromaticities.cpp IlmImf\ImfChromaticitiesAttribute.cpp IlmImf\ImfCompositeDeepScanLine.cpp IlmImf\ImfCompressionAttribute.cpp IlmImf\ImfCompressor.cpp IlmImf\ImfConvert.cpp IlmImf\ImfCRgbaFile.cpp IlmImf\ImfDeepCompositing.cpp IlmImf\ImfDeepFrameBuffer.cpp IlmImf\ImfDeepImageStateAttribute.cpp IlmImf\ImfDeepScanLineInputFile.cpp IlmImf\ImfDeepScanLineInputPart.cpp IlmImf\ImfDeepScanLineOutputFile.cpp IlmImf\ImfDeepScanLineOutputPart.cpp IlmImf\ImfDeepTiledInputFile.cpp IlmImf\ImfDeepTiledInputPart.cpp IlmImf\ImfDeepTiledOutputFile.cpp IlmImf\ImfDeepTiledOutputPart.cpp IlmImf\ImfDoubleAttribute.cpp IlmImf\ImfDwaCompressor.cpp IlmImf\ImfEnvmap.cpp IlmImf\ImfEnvmapAttribute.cpp IlmImf\ImfFastHuf.cpp IlmImf\ImfFloatAttribute.cpp IlmImf\ImfFloatVectorAttribute.cpp IlmImf\ImfFrameBuffer.cpp IlmImf\ImfFramesPerSecond.cpp IlmImf\ImfGenericInputFile.cpp IlmImf\ImfGenericOutputFile.cpp IlmImf\ImfHeader.cpp IlmImf\ImfHuf.cpp IlmImf\ImfInputFile.cpp IlmImf\ImfInputPart.cpp IlmImf\ImfInputPartData.cpp IlmImf\ImfIntAttribute.cpp IlmImf\ImfIO.cpp IlmImf\ImfKeyCode.cpp IlmImf\ImfKeyCodeAttribute.cpp IlmImf\ImfLineOrderAttribute.cpp IlmImf\ImfLut.cpp IlmImf\ImfMatrixAttribute.cpp IlmImf\ImfMisc.cpp IlmImf\ImfMultiPartInputFile.cpp IlmImf\ImfMultiPartOutputFile.cpp IlmImf\ImfMultiView.cpp IlmImf\ImfOpaqueAttribute.cpp IlmImf\ImfOutputFile.cpp IlmImf\ImfOutputPart.cpp IlmImf\ImfOutputPartData.cpp IlmImf\ImfPartType.cpp IlmImf\ImfPizCompressor.cpp IlmImf\ImfPreviewImage.cpp IlmImf\ImfPreviewImageAttribute.cpp IlmImf\ImfPxr24Compressor.cpp IlmImf\ImfRational.cpp IlmImf\ImfRationalAttribute.cpp IlmImf\ImfRgbaFile.cpp IlmImf\ImfRgbaYca.cpp IlmImf\ImfRle.cpp IlmImf\ImfRleCompressor.cpp IlmImf\ImfScanLineInputFile.cpp IlmImf\ImfStandardAttributes.cpp IlmImf\ImfStdIO.cpp IlmImf\ImfStringAttribute.cpp IlmImf\ImfStringVectorAttribute.cpp IlmImf\ImfSystemSpecific.cpp IlmImf\ImfTestFile.cpp IlmImf\ImfThreading.cpp IlmImf\ImfTileDescriptionAttribute.cpp IlmImf\ImfTiledInputFile.cpp IlmImf\ImfTiledInputPart.cpp IlmImf\ImfTiledMisc.cpp IlmImf\ImfTiledOutputFile.cpp IlmImf\ImfTiledOutputPart.cpp IlmImf\ImfTiledRgbaFile.cpp IlmImf\ImfTileOffsets.cpp IlmImf\ImfTimeCode.cpp IlmImf\ImfTimeCodeAttribute.cpp IlmImf\ImfVecAttribute.cpp IlmImf\ImfVersion.cpp IlmImf\ImfWav.cpp IlmImf\ImfZip.cpp IlmImf\ImfZipCompressor.cpp Imath\ImathBox.cpp Imath\ImathColorAlgo.cpp Imath\ImathFun.cpp Imath\ImathMatrixAlgo.cpp Imath\ImathRandom.cpp Imath\ImathShear.cpp Imath\ImathVec.cpp Iex\IexBaseExc.cpp Iex\IexThrowErrnoExc.cpp Half\half.cpp IlmThread\IlmThread.cpp IlmThread\IlmThreadMutex.cpp IlmThread\IlmThreadPool.cpp IlmThread\IlmThreadSemaphore.cpp IexMath\IexMathFloatExc.cpp
+         IexMathFpu.cpp
+         b44ExpLogTable.cpp
+         ImfAcesFile.cpp
+     1>IlmImf\ImfAcesFile.cpp(59): warning C4305: 'argument': truncation from 'double' to 'float'
+     1>IlmImf\ImfAcesFile.cpp(426): warning C4305: 'argument': truncation from 'double' to 'float'
+     1>IlmImf\ImfAcesFile.cpp(432): warning C4305: 'argument': truncation from 'double' to 'float'
+         ImfAttribute.cpp
+         ImfB44Compressor.cpp
+         ImfBoxAttribute.cpp
+         ImfChannelList.cpp
+         ImfChannelListAttribute.cpp
+         ImfChromaticities.cpp
+         ImfChromaticitiesAttribute.cpp
+         ImfCompositeDeepScanLine.cpp
+     1>c:\users\felix\documents\cmakeexperiments\glstuff\external\freeimage\source\openexr\ilmimf\ImfVersion.h(112): warning C4800: 'int': forcing value to bool 'true' or 'false' (performance warning)
+     1>c:\users\felix\documents\cmakeexperiments\glstuff\external\freeimage\source\openexr\ilmimf\ImfVersion.h(113): warning C4800: 'int': forcing value to bool 'true' or 'false' (performance warning)
+         ImfCompressionAttribute.cpp
+         ImfCompressor.cpp
+         ImfConvert.cpp
+         ImfCRgbaFile.cpp
+         ImfDeepCompositing.cpp
+     1>IlmImf\ImfDeepCompositing.cpp(84): warning C4244: '+=': conversion from 'double' to 'float', possible loss of data
+         ImfDeepFrameBuffer.cpp
+         ImfDeepImageStateAttribute.cpp
+         ImfDeepScanLineInputFile.cpp
+     1>c:\users\felix\documents\cmakeexperiments\glstuff\external\freeimage\source\openexr\ilmimf\ImfVersion.h(112): warning C4800: 'int': forcing value to bool 'true' or 'false' (performance warning)
+     1>c:\users\felix\documents\cmakeexperiments\glstuff\external\freeimage\source\openexr\ilmimf\ImfVersion.h(113): warning C4800: 'int': forcing value to bool 'true' or 'false' (performance warning)
+     1>IlmImf\ImfDeepScanLineInputFile.cpp(343): warning C4244: 'argument': conversion from 'Imath_2_2::Int64' to 'int', possible loss of data
+     1>IlmImf\ImfDeepScanLineInputFile.cpp(504): warning C4244: 'argument': conversion from 'Imath_2_2::Int64' to 'int', possible loss of data
+     1>IlmImf\ImfDeepScanLineInputFile.cpp(511): warning C4244: 'argument': conversion from 'Imath_2_2::Int64' to 'int', possible loss of data
+     1>IlmImf\ImfDeepScanLineInputFile.cpp(517): warning C4244: 'initializing': conversion from 'Imath_2_2::Int64' to 'unsigned int', possible loss of data
+     1>IlmImf\ImfDeepScanLineInputFile.cpp(518): warning C4244: 'argument': conversion from 'Imath_2_2::Int64' to 'int', possible loss of data
+     1>IlmImf\ImfDeepScanLineInputFile.cpp(627): warning C4244: 'argument': conversion from 'Imath_2_2::Int64' to 'size_t', possible loss of data
+     1>IlmImf\ImfDeepScanLineInputFile.cpp(636): warning C4244: 'argument': conversion from 'Imath_2_2::Int64' to 'int', possible loss of data
+     1>IlmImf\ImfDeepScanLineInputFile.cpp(1471): warning C4244: 'argument': conversion from 'Imath_2_2::Int64' to 'int', possible loss of data
+     1>IlmImf\ImfDeepScanLineInputFile.cpp(1512): warning C4244: 'argument': conversion from 'Imath_2_2::Int64' to 'size_t', possible loss of data
+     1>IlmImf\ImfDeepScanLineInputFile.cpp(1516): warning C4244: 'argument': conversion from 'Imath_2_2::Int64' to 'int', possible loss of data
+     1>IlmImf\ImfDeepScanLineInputFile.cpp(1717): warning C4244: 'argument': conversion from 'Imath_2_2::Int64' to 'size_t', possible loss of data
+     1>IlmImf\ImfDeepScanLineInputFile.cpp(1722): warning C4244: 'argument': conversion from 'Imath_2_2::Int64' to 'int', possible loss of data
+     1>IlmImf\ImfDeepScanLineInputFile.cpp(1833): warning C4244: 'argument': conversion from 'Imath_2_2::Int64' to 'int', possible loss of data
+     1>IlmImf\ImfDeepScanLineInputFile.cpp(1851): warning C4244: 'argument': conversion from 'Imath_2_2::Int64' to 'int', possible loss of data
+         ImfDeepScanLineInputPart.cpp
+     1>c:\users\felix\documents\cmakeexperiments\glstuff\external\freeimage\source\openexr\ilmimf\ImfVersion.h(112): warning C4800: 'int': forcing value to bool 'true' or 'false' (performance warning)
+     1>c:\users\felix\documents\cmakeexperiments\glstuff\external\freeimage\source\openexr\ilmimf\ImfVersion.h(113): warning C4800: 'int': forcing value to bool 'true' or 'false' (performance warning)
+         Generating Code...
+         Compiling...
+         ImfDeepScanLineOutputFile.cpp
+     1>c:\users\felix\documents\cmakeexperiments\glstuff\external\freeimage\source\openexr\ilmimf\ImfVersion.h(112): warning C4800: 'int': forcing value to bool 'true' or 'false' (performance warning)
+     1>c:\users\felix\documents\cmakeexperiments\glstuff\external\freeimage\source\openexr\ilmimf\ImfVersion.h(113): warning C4800: 'int': forcing value to bool 'true' or 'false' (performance warning)
+     1>IlmImf\ImfDeepScanLineOutputFile.cpp(378): warning C4244: 'argument': conversion from 'Imath_2_2::Int64' to 'int', possible loss of data
+     1>IlmImf\ImfDeepScanLineOutputFile.cpp(384): warning C4244: 'argument': conversion from 'Imath_2_2::Int64' to 'int', possible loss of data
+     1>IlmImf\ImfDeepScanLineOutputFile.cpp(696): warning C4244: 'argument': conversion from 'Imath_2_2::Int64' to 'long', possible loss of data
+     1>IlmImf\ImfDeepScanLineOutputFile.cpp(736): warning C4244: 'argument': conversion from 'Imath_2_2::Int64' to 'int', possible loss of data
+     1>IlmImf\ImfDeepScanLineOutputFile.cpp(759): warning C4244: 'argument': conversion from 'Imath_2_2::Int64' to 'size_t', possible loss of data
+     1>IlmImf\ImfDeepScanLineOutputFile.cpp(769): warning C4244: 'argument': conversion from 'Imath_2_2::Int64' to 'int', possible loss of data
+     1>IlmImf\ImfDeepScanLineOutputFile.cpp(786): warning C4244: 'argument': conversion from 'Imath_2_2::Int64' to 'int', possible loss of data
+     1>IlmImf\ImfDeepScanLineOutputFile.cpp(974): warning C4244: 'argument': conversion from 'Imath_2_2::Int64' to 'long', possible loss of data
+     1>IlmImf\ImfDeepScanLineOutputFile.cpp(979): warning C4244: 'argument': conversion from 'Imath_2_2::Int64' to 'size_t', possible loss of data
+     1>IlmImf\ImfDeepScanLineOutputFile.cpp(1479): warning C4244: 'argument': conversion from 'Imath_2_2::Int64' to 'unsigned int', possible loss of data
+         ImfDeepScanLineOutputPart.cpp
+     1>c:\users\felix\documents\cmakeexperiments\glstuff\external\freeimage\source\openexr\ilmimf\ImfVersion.h(112): warning C4800: 'int': forcing value to bool 'true' or 'false' (performance warning)
+     1>c:\users\felix\documents\cmakeexperiments\glstuff\external\freeimage\source\openexr\ilmimf\ImfVersion.h(113): warning C4800: 'int': forcing value to bool 'true' or 'false' (performance warning)
+         ImfDeepTiledInputFile.cpp
+     1>c:\users\felix\documents\cmakeexperiments\glstuff\external\freeimage\source\openexr\ilmimf\ImfVersion.h(112): warning C4800: 'int': forcing value to bool 'true' or 'false' (performance warning)
+     1>c:\users\felix\documents\cmakeexperiments\glstuff\external\freeimage\source\openexr\ilmimf\ImfVersion.h(113): warning C4800: 'int': forcing value to bool 'true' or 'false' (performance warning)
+     1>IlmImf\ImfDeepTiledInputFile.cpp(418): warning C4244: 'argument': conversion from 'Imath_2_2::Int64' to 'int', possible loss of data
+     1>IlmImf\ImfDeepTiledInputFile.cpp(438): warning C4244: 'argument': conversion from 'Imath_2_2::Int64' to 'int', possible loss of data
+     1>IlmImf\ImfDeepTiledInputFile.cpp(444): warning C4244: 'initializing': conversion from 'Imath_2_2::Int64' to 'unsigned int', possible loss of data
+     1>IlmImf\ImfDeepTiledInputFile.cpp(445): warning C4244: 'argument': conversion from 'Imath_2_2::Int64' to 'int', possible loss of data
+     1>IlmImf\ImfDeepTiledInputFile.cpp(493): warning C4244: 'argument': conversion from 'Imath_2_2::Int64' to 'int', possible loss of data
+     1>IlmImf\ImfDeepTiledInputFile.cpp(499): warning C4244: 'argument': conversion from 'Imath_2_2::Int64' to 'int', possible loss of data
+     1>IlmImf\ImfDeepTiledInputFile.cpp(632): warning C4244: 'argument': conversion from 'Imath_2_2::Int64' to 'int', possible loss of data
+     1>IlmImf\ImfDeepTiledInputFile.cpp(1021): warning C4244: 'argument': conversion from 'Imath_2_2::Int64' to 'long', possible loss of data
+     1>IlmImf\ImfDeepTiledInputFile.cpp(1025): warning C4244: 'argument': conversion from 'Imath_2_2::Int64' to 'size_t', possible loss of data
+     1>IlmImf\ImfDeepTiledInputFile.cpp(1495): warning C4244: 'argument': conversion from 'Imath_2_2::Int64' to 'int', possible loss of data
+     1>IlmImf\ImfDeepTiledInputFile.cpp(1844): warning C4244: 'argument': conversion from 'Imath_2_2::Int64' to 'int', possible loss of data
+     1>IlmImf\ImfDeepTiledInputFile.cpp(1857): warning C4244: 'argument': conversion from 'Imath_2_2::Int64' to 'int', possible loss of data
+         ImfDeepTiledInputPart.cpp
+     1>c:\users\felix\documents\cmakeexperiments\glstuff\external\freeimage\source\openexr\ilmimf\ImfVersion.h(112): warning C4800: 'int': forcing value to bool 'true' or 'false' (performance warning)
+     1>c:\users\felix\documents\cmakeexperiments\glstuff\external\freeimage\source\openexr\ilmimf\ImfVersion.h(113): warning C4800: 'int': forcing value to bool 'true' or 'false' (performance warning)
+         ImfDeepTiledOutputFile.cpp
+     1>c:\users\felix\documents\cmakeexperiments\glstuff\external\freeimage\source\openexr\ilmimf\ImfVersion.h(112): warning C4800: 'int': forcing value to bool 'true' or 'false' (performance warning)
+     1>c:\users\felix\documents\cmakeexperiments\glstuff\external\freeimage\source\openexr\ilmimf\ImfVersion.h(113): warning C4800: 'int': forcing value to bool 'true' or 'false' (performance warning)
+     1>IlmImf\ImfDeepTiledOutputFile.cpp(194): warning C4244: 'initializing': conversion from 'Imath_2_2::Int64' to 'unsigned int', possible loss of data
+     1>IlmImf\ImfDeepTiledOutputFile.cpp(195): warning C4244: 'argument': conversion from 'Imath_2_2::Int64' to 'size_t', possible loss of data
+     1>IlmImf\ImfDeepTiledOutputFile.cpp(554): warning C4244: 'argument': conversion from 'Imath_2_2::Int64' to 'int', possible loss of data
+     1>IlmImf\ImfDeepTiledOutputFile.cpp(560): warning C4244: 'argument': conversion from 'Imath_2_2::Int64' to 'int', possible loss of data
+     1>IlmImf\ImfDeepTiledOutputFile.cpp(690): warning C4244: 'argument': conversion from 'Imath_2_2::Int64' to 'int', possible loss of data
+     1>IlmImf\ImfDeepTiledOutputFile.cpp(743): warning C4244: 'argument': conversion from 'Imath_2_2::Int64' to 'size_t', possible loss of data
+     1>IlmImf\ImfDeepTiledOutputFile.cpp(874): warning C4244: 'argument': conversion from 'Imath_2_2::Int64' to 'long', possible loss of data
+     1>IlmImf\ImfDeepTiledOutputFile.cpp(910): warning C4244: 'argument': conversion from 'unsigned __int64' to 'size_t', possible loss of data
+     1>IlmImf\ImfDeepTiledOutputFile.cpp(972): warning C4244: 'argument': conversion from 'Imath_2_2::Int64' to 'int', possible loss of data
+     1>IlmImf\ImfDeepTiledOutputFile.cpp(1002): warning C4244: 'argument': conversion from 'Imath_2_2::Int64' to 'size_t', possible loss of data
+     1>IlmImf\ImfDeepTiledOutputFile.cpp(1011): warning C4244: 'argument': conversion from 'Imath_2_2::Int64' to 'int', possible loss of data
+     1>IlmImf\ImfDeepTiledOutputFile.cpp(1243): warning C4244: 'argument': conversion from 'Imath_2_2::Int64' to 'long', possible loss of data
+     1>IlmImf\ImfDeepTiledOutputFile.cpp(1246): warning C4244: 'argument': conversion from 'Imath_2_2::Int64' to 'size_t', possible loss of data
+     1>IlmImf\ImfDeepTiledOutputFile.cpp(1251): warning C4244: 'argument': conversion from 'Imath_2_2::Int64' to 'size_t', possible loss of data
+     1>IlmImf\ImfDeepTiledOutputFile.cpp(1749): warning C4244: 'argument': conversion from 'Imath_2_2::Int64' to 'unsigned int', possible loss of data
+         ImfDeepTiledOutputPart.cpp
+     1>c:\users\felix\documents\cmakeexperiments\glstuff\external\freeimage\source\openexr\ilmimf\ImfVersion.h(112): warning C4800: 'int': forcing value to bool 'true' or 'false' (performance warning)
+     1>c:\users\felix\documents\cmakeexperiments\glstuff\external\freeimage\source\openexr\ilmimf\ImfVersion.h(113): warning C4800: 'int': forcing value to bool 'true' or 'false' (performance warning)
+         ImfDoubleAttribute.cpp
+         ImfDwaCompressor.cpp
+     1>IlmImf\ImfDwaCompressor.cpp(274): warning C4018: '<': signed/unsigned mismatch
+     1>IlmImf\ImfDwaCompressor.cpp(756): warning C4018: '<': signed/unsigned mismatch
+     1>IlmImf\ImfDwaCompressor.cpp(785): warning C4018: '<': signed/unsigned mismatch
+     1>IlmImf\ImfDwaCompressor.cpp(941): warning C4018: '<': signed/unsigned mismatch
+     1>IlmImf\ImfDwaCompressor.cpp(1139): warning C4018: '<': signed/unsigned mismatch
+     1>IlmImf\ImfDwaCompressor.cpp(1914): warning C4267: '+=': conversion from 'size_t' to 'unsigned short', possible loss of data
+     1>IlmImf\ImfDwaCompressor.cpp(2423): warning C4267: '-=': conversion from 'size_t' to 'unsigned short', possible loss of data
+     1>IlmImf\ImfDwaCompressor.cpp(2435): warning C4018: '>': signed/unsigned mismatch
+     1>IlmImf\ImfDwaCompressor.cpp(2986): warning C4018: '<': signed/unsigned mismatch
+     1>IlmImf\ImfDwaCompressor.cpp(3023): warning C4018: '>': signed/unsigned mismatch
+     1>IlmImf\ImfDwaCompressor.cpp(3035): warning C4018: '>': signed/unsigned mismatch
+     1>IlmImf\ImfDwaCompressor.cpp(3043): warning C4018: '>': signed/unsigned mismatch
+     1>IlmImf\ImfDwaCompressor.cpp(3104): warning C4018: '>': signed/unsigned mismatch
+         ImfEnvmap.cpp
+         ImfEnvmapAttribute.cpp
+         ImfFastHuf.cpp
+     1>IlmImf\ImfFastHuf.cpp(154): warning C4244: 'initializing': conversion from 'Imath_2_2::Int64' to 'int', possible loss of data
+     1>IlmImf\ImfFastHuf.cpp(167): warning C4244: 'initializing': conversion from 'Imath_2_2::Int64' to 'int', possible loss of data
+     1>IlmImf\ImfFastHuf.cpp(183): warning C4244: '=': conversion from 'Imath_2_2::Int64' to 'unsigned char', possible loss of data
+     1>IlmImf\ImfFastHuf.cpp(186): warning C4244: '=': conversion from 'Imath_2_2::Int64' to 'unsigned char', possible loss of data
+     1>IlmImf\ImfFastHuf.cpp(256): warning C4244: 'initializing': conversion from 'unsigned __int64' to 'int', possible loss of data
+         ImfFloatAttribute.cpp
+         ImfFloatVectorAttribute.cpp
+         ImfFrameBuffer.cpp
+         ImfFramesPerSecond.cpp
+         ImfGenericInputFile.cpp
+     1>./IlmImf\ImfVersion.h(112): warning C4800: 'int': forcing value to bool 'true' or 'false' (performance warning)
+     1>./IlmImf\ImfVersion.h(113): warning C4800: 'int': forcing value to bool 'true' or 'false' (performance warning)
+         ImfGenericOutputFile.cpp
+     1>c:\users\felix\documents\cmakeexperiments\glstuff\external\freeimage\source\openexr\ilmimf\ImfVersion.h(112): warning C4800: 'int': forcing value to bool 'true' or 'false' (performance warning)
+     1>c:\users\felix\documents\cmakeexperiments\glstuff\external\freeimage\source\openexr\ilmimf\ImfVersion.h(113): warning C4800: 'int': forcing value to bool 'true' or 'false' (performance warning)
+         ImfHeader.cpp
+     1>./IlmImf\ImfVersion.h(112): warning C4800: 'int': forcing value to bool 'true' or 'false' (performance warning)
+     1>./IlmImf\ImfVersion.h(113): warning C4800: 'int': forcing value to bool 'true' or 'false' (performance warning)
+         ImfHuf.cpp
+     1>IlmImf\ImfHuf.cpp(171): warning C4244: '=': conversion from 'Imath_2_2::Int64' to 'char', possible loss of data
+     1>IlmImf\ImfHuf.cpp(250): warning C4244: 'initializing': conversion from 'Imath_2_2::Int64' to 'int', possible loss of data
+     1>IlmImf\ImfHuf.cpp(481): warning C4244: 'initializing': conversion from 'Imath_2_2::Int64' to 'int', possible loss of data
+     1>IlmImf\ImfHuf.cpp(550): warning C4244: 'initializing': conversion from 'Imath_2_2::Int64' to 'int', possible loss of data
+     1>IlmImf\ImfHuf.cpp(562): warning C4244: 'initializing': conversion from 'Imath_2_2::Int64' to 'int', possible loss of data
+     1>IlmImf\ImfHuf.cpp(621): warning C4244: 'initializing': conversion from 'Imath_2_2::Int64' to 'int', possible loss of data
+     1>IlmImf\ImfHuf.cpp(724): warning C4244: 'argument': conversion from 'Imath_2_2::Int64' to 'int', possible loss of data
+     1>IlmImf\ImfHuf.cpp(898): warning C4244: 'initializing': conversion from 'Imath_2_2::Int64' to 'unsigned char', possible loss of data
+     1>IlmImf\ImfHuf.cpp(913): warning C4244: 'initializing': conversion from 'Imath_2_2::Int64' to 'int', possible loss of data
+     1>IlmImf\ImfHuf.cpp(928): warning C4244: 'initializing': conversion from 'Imath_2_2::Int64' to 'unsigned char', possible loss of data
+     1>IlmImf\ImfHuf.cpp(955): warning C4244: 'initializing': conversion from 'Imath_2_2::Int64' to 'unsigned char', possible loss of data
+         ImfInputFile.cpp
+     1>c:\users\felix\documents\cmakeexperiments\glstuff\external\freeimage\source\openexr\ilmimf\ImfVersion.h(112): warning C4800: 'int': forcing value to bool 'true' or 'false' (performance warning)
+     1>c:\users\felix\documents\cmakeexperiments\glstuff\external\freeimage\source\openexr\ilmimf\ImfVersion.h(113): warning C4800: 'int': forcing value to bool 'true' or 'false' (performance warning)
+         Generating Code...
+         Compiling...
+         ImfInputPart.cpp
+     1>c:\users\felix\documents\cmakeexperiments\glstuff\external\freeimage\source\openexr\ilmimf\ImfVersion.h(112): warning C4800: 'int': forcing value to bool 'true' or 'false' (performance warning)
+     1>c:\users\felix\documents\cmakeexperiments\glstuff\external\freeimage\source\openexr\ilmimf\ImfVersion.h(113): warning C4800: 'int': forcing value to bool 'true' or 'false' (performance warning)
+         ImfInputPartData.cpp
+         ImfIntAttribute.cpp
+         ImfIO.cpp
+         ImfKeyCode.cpp
+         ImfKeyCodeAttribute.cpp
+         ImfLineOrderAttribute.cpp
+         ImfLut.cpp
+     1>IlmImf\ImfLut.cpp(156): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+     1>IlmImf\ImfLut.cpp(156): warning C4244: 'initializing': conversion from 'double' to 'const float', possible loss of data
+     1>IlmImf\ImfLut.cpp(174): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+         ImfMatrixAttribute.cpp
+         ImfMisc.cpp
+     1>IlmImf\ImfMisc.cpp(313): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+     1>IlmImf\ImfMisc.cpp(708): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+         ImfMultiPartInputFile.cpp
+     1>c:\users\felix\documents\cmakeexperiments\glstuff\external\freeimage\source\openexr\ilmimf\ImfVersion.h(112): warning C4800: 'int': forcing value to bool 'true' or 'false' (performance warning)
+     1>c:\users\felix\documents\cmakeexperiments\glstuff\external\freeimage\source\openexr\ilmimf\ImfVersion.h(113): warning C4800: 'int': forcing value to bool 'true' or 'false' (performance warning)
+         ImfMultiPartOutputFile.cpp
+     1>c:\users\felix\documents\cmakeexperiments\glstuff\external\freeimage\source\openexr\ilmimf\ImfVersion.h(112): warning C4800: 'int': forcing value to bool 'true' or 'false' (performance warning)
+     1>c:\users\felix\documents\cmakeexperiments\glstuff\external\freeimage\source\openexr\ilmimf\ImfVersion.h(113): warning C4800: 'int': forcing value to bool 'true' or 'false' (performance warning)
+         ImfMultiView.cpp
+         ImfOpaqueAttribute.cpp
+         ImfOutputFile.cpp
+     1>c:\users\felix\documents\cmakeexperiments\glstuff\external\freeimage\source\openexr\ilmimf\ImfVersion.h(112): warning C4800: 'int': forcing value to bool 'true' or 'false' (performance warning)
+     1>c:\users\felix\documents\cmakeexperiments\glstuff\external\freeimage\source\openexr\ilmimf\ImfVersion.h(113): warning C4800: 'int': forcing value to bool 'true' or 'false' (performance warning)
+         ImfOutputPart.cpp
+     1>c:\users\felix\documents\cmakeexperiments\glstuff\external\freeimage\source\openexr\ilmimf\ImfVersion.h(112): warning C4800: 'int': forcing value to bool 'true' or 'false' (performance warning)
+     1>c:\users\felix\documents\cmakeexperiments\glstuff\external\freeimage\source\openexr\ilmimf\ImfVersion.h(113): warning C4800: 'int': forcing value to bool 'true' or 'false' (performance warning)
+         ImfOutputPartData.cpp
+         ImfPartType.cpp
+         ImfPizCompressor.cpp
+         ImfPreviewImage.cpp
+         Generating Code...
+         Compiling...
+         ImfPreviewImageAttribute.cpp
+         ImfPxr24Compressor.cpp
+         ImfRational.cpp
+         ImfRationalAttribute.cpp
+         ImfRgbaFile.cpp
+     1>c:\users\felix\documents\cmakeexperiments\glstuff\external\freeimage\source\openexr\ilmimf\ImfVersion.h(112): warning C4800: 'int': forcing value to bool 'true' or 'false' (performance warning)
+     1>c:\users\felix\documents\cmakeexperiments\glstuff\external\freeimage\source\openexr\ilmimf\ImfVersion.h(113): warning C4800: 'int': forcing value to bool 'true' or 'false' (performance warning)
+         ImfRgbaYca.cpp
+         ImfRle.cpp
+         ImfRleCompressor.cpp
+         ImfScanLineInputFile.cpp
+     1>c:\users\felix\documents\cmakeexperiments\glstuff\external\freeimage\source\openexr\ilmimf\ImfVersion.h(112): warning C4800: 'int': forcing value to bool 'true' or 'false' (performance warning)
+     1>c:\users\felix\documents\cmakeexperiments\glstuff\external\freeimage\source\openexr\ilmimf\ImfVersion.h(113): warning C4800: 'int': forcing value to bool 'true' or 'false' (performance warning)
+     1>IlmImf\ImfScanLineInputFile.cpp(1467): warning C4244: 'argument': conversion from 'const double' to 'float', possible loss of data
+         ImfStandardAttributes.cpp
+         ImfStdIO.cpp
+         ImfStringAttribute.cpp
+         ImfStringVectorAttribute.cpp
+         ImfSystemSpecific.cpp
+     1>IlmImf\ImfSystemSpecific.cpp(104): warning C4800: 'int': forcing value to bool 'true' or 'false' (performance warning)
+     1>IlmImf\ImfSystemSpecific.cpp(106): warning C4800: 'int': forcing value to bool 'true' or 'false' (performance warning)
+     1>IlmImf\ImfSystemSpecific.cpp(107): warning C4800: 'int': forcing value to bool 'true' or 'false' (performance warning)
+     1>IlmImf\ImfSystemSpecific.cpp(108): warning C4800: 'int': forcing value to bool 'true' or 'false' (performance warning)
+     1>IlmImf\ImfSystemSpecific.cpp(109): warning C4800: 'int': forcing value to bool 'true' or 'false' (performance warning)
+     1>IlmImf\ImfSystemSpecific.cpp(110): warning C4800: 'int': forcing value to bool 'true' or 'false' (performance warning)
+     1>IlmImf\ImfSystemSpecific.cpp(111): warning C4800: 'int': forcing value to bool 'true' or 'false' (performance warning)
+         ImfTestFile.cpp
+     1>./IlmImf\ImfVersion.h(112): warning C4800: 'int': forcing value to bool 'true' or 'false' (performance warning)
+     1>./IlmImf\ImfVersion.h(113): warning C4800: 'int': forcing value to bool 'true' or 'false' (performance warning)
+         ImfThreading.cpp
+         ImfTileDescriptionAttribute.cpp
+         ImfTiledInputFile.cpp
+     1>c:\users\felix\documents\cmakeexperiments\glstuff\external\freeimage\source\openexr\ilmimf\ImfVersion.h(112): warning C4800: 'int': forcing value to bool 'true' or 'false' (performance warning)
+     1>c:\users\felix\documents\cmakeexperiments\glstuff\external\freeimage\source\openexr\ilmimf\ImfVersion.h(113): warning C4800: 'int': forcing value to bool 'true' or 'false' (performance warning)
+         ImfTiledInputPart.cpp
+     1>c:\users\felix\documents\cmakeexperiments\glstuff\external\freeimage\source\openexr\ilmimf\ImfVersion.h(112): warning C4800: 'int': forcing value to bool 'true' or 'false' (performance warning)
+     1>c:\users\felix\documents\cmakeexperiments\glstuff\external\freeimage\source\openexr\ilmimf\ImfVersion.h(113): warning C4800: 'int': forcing value to bool 'true' or 'false' (performance warning)
+         ImfTiledMisc.cpp
+         Generating Code...
+         Compiling...
+         ImfTiledOutputFile.cpp
+     1>c:\users\felix\documents\cmakeexperiments\glstuff\external\freeimage\source\openexr\ilmimf\ImfVersion.h(112): warning C4800: 'int': forcing value to bool 'true' or 'false' (performance warning)
+     1>c:\users\felix\documents\cmakeexperiments\glstuff\external\freeimage\source\openexr\ilmimf\ImfVersion.h(113): warning C4800: 'int': forcing value to bool 'true' or 'false' (performance warning)
+         ImfTiledOutputPart.cpp
+     1>c:\users\felix\documents\cmakeexperiments\glstuff\external\freeimage\source\openexr\ilmimf\ImfVersion.h(112): warning C4800: 'int': forcing value to bool 'true' or 'false' (performance warning)
+     1>c:\users\felix\documents\cmakeexperiments\glstuff\external\freeimage\source\openexr\ilmimf\ImfVersion.h(113): warning C4800: 'int': forcing value to bool 'true' or 'false' (performance warning)
+         ImfTiledRgbaFile.cpp
+     1>c:\users\felix\documents\cmakeexperiments\glstuff\external\freeimage\source\openexr\ilmimf\ImfVersion.h(112): warning C4800: 'int': forcing value to bool 'true' or 'false' (performance warning)
+     1>c:\users\felix\documents\cmakeexperiments\glstuff\external\freeimage\source\openexr\ilmimf\ImfVersion.h(113): warning C4800: 'int': forcing value to bool 'true' or 'false' (performance warning)
+         ImfTileOffsets.cpp
+     1>IlmImf\ImfTileOffsets.cpp(154): warning C4244: 'argument': conversion from 'Imath_2_2::Int64' to 'int', possible loss of data
+         ImfTimeCode.cpp
+         ImfTimeCodeAttribute.cpp
+         ImfVecAttribute.cpp
+         ImfVersion.cpp
+     1>./IlmImf\ImfVersion.h(112): warning C4800: 'int': forcing value to bool 'true' or 'false' (performance warning)
+     1>./IlmImf\ImfVersion.h(113): warning C4800: 'int': forcing value to bool 'true' or 'false' (performance warning)
+         ImfWav.cpp
+         ImfZip.cpp
+         ImfZipCompressor.cpp
+         ImathBox.cpp
+         ImathColorAlgo.cpp
+         ImathFun.cpp
+         ImathMatrixAlgo.cpp
+     1>Imath\ImathMatrixAlgo.cpp(118): warning C4018: '<': signed/unsigned mismatch
+         Imath\ImathMatrixAlgo.cpp(254): note: see reference to function template instantiation 'Imath_2_2::M44d Imath_2_2::procrustesRotationAndTranslation<double>(const Imath_2_2::V3d *,const Imath_2_2::V3d *,const double *,const size_t,const bool)' being compiled
+     1>Imath\ImathMatrixAlgo.cpp(127): warning C4018: '<': signed/unsigned mismatch
+     1>Imath\ImathMatrixAlgo.cpp(155): warning C4018: '<': signed/unsigned mismatch
+     1>Imath\ImathMatrixAlgo.cpp(160): warning C4018: '<': signed/unsigned mismatch
+     1>Imath\ImathMatrixAlgo.cpp(200): warning C4018: '<': signed/unsigned mismatch
+     1>Imath\ImathMatrixAlgo.cpp(205): warning C4018: '<': signed/unsigned mismatch
+         ImathRandom.cpp
+         ImathShear.cpp
+         ImathVec.cpp
+         IexBaseExc.cpp
+         IexThrowErrnoExc.cpp
+         Generating Code...
+         Compiling...
+         half.cpp
+         IlmThread.cpp
+     1>IlmThread\IlmThread.cpp(67): warning C4297: 'IlmThread_2_2::Thread::~Thread': function assumed not to throw an exception but does
+         IlmThread\IlmThread.cpp(67): note: destructor or deallocator has a (possibly implicit) non-throwing exception specification
+         IlmThreadMutex.cpp
+         IlmThreadPool.cpp
+         IlmThreadSemaphore.cpp
+         IexMathFloatExc.cpp
+         Generating Code...
+     1>c:\users\felix\documents\cmakeexperiments\glstuff\external\freeimage\source\openexr\ilmthread\ilmthread.cpp(68): warning C4722: 'IlmThread_2_2::Thread::~Thread': destructor never returns, potential memory leak
+       Lib:
+         C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\Lib.exe /OUT:".\Win32\Release\OpenEXR.lib" /NOLOGO /LTCG .\Win32\Release\IexMathFpu.obj
+         .\Win32\Release\b44ExpLogTable.obj
+         .\Win32\Release\ImfAcesFile.obj
+         .\Win32\Release\ImfAttribute.obj
+         .\Win32\Release\ImfB44Compressor.obj
+         .\Win32\Release\ImfBoxAttribute.obj
+         .\Win32\Release\ImfChannelList.obj
+         .\Win32\Release\ImfChannelListAttribute.obj
+         .\Win32\Release\ImfChromaticities.obj
+         .\Win32\Release\ImfChromaticitiesAttribute.obj
+         .\Win32\Release\ImfCompositeDeepScanLine.obj
+         .\Win32\Release\ImfCompressionAttribute.obj
+         .\Win32\Release\ImfCompressor.obj
+         .\Win32\Release\ImfConvert.obj
+         .\Win32\Release\ImfCRgbaFile.obj
+         .\Win32\Release\ImfDeepCompositing.obj
+         .\Win32\Release\ImfDeepFrameBuffer.obj
+         .\Win32\Release\ImfDeepImageStateAttribute.obj
+         .\Win32\Release\ImfDeepScanLineInputFile.obj
+         .\Win32\Release\ImfDeepScanLineInputPart.obj
+         .\Win32\Release\ImfDeepScanLineOutputFile.obj
+         .\Win32\Release\ImfDeepScanLineOutputPart.obj
+         .\Win32\Release\ImfDeepTiledInputFile.obj
+         .\Win32\Release\ImfDeepTiledInputPart.obj
+         .\Win32\Release\ImfDeepTiledOutputFile.obj
+         .\Win32\Release\ImfDeepTiledOutputPart.obj
+         .\Win32\Release\ImfDoubleAttribute.obj
+         .\Win32\Release\ImfDwaCompressor.obj
+         .\Win32\Release\ImfEnvmap.obj
+         .\Win32\Release\ImfEnvmapAttribute.obj
+         .\Win32\Release\ImfFastHuf.obj
+         .\Win32\Release\ImfFloatAttribute.obj
+         .\Win32\Release\ImfFloatVectorAttribute.obj
+         .\Win32\Release\ImfFrameBuffer.obj
+         .\Win32\Release\ImfFramesPerSecond.obj
+         .\Win32\Release\ImfGenericInputFile.obj
+         .\Win32\Release\ImfGenericOutputFile.obj
+         .\Win32\Release\ImfHeader.obj
+         .\Win32\Release\ImfHuf.obj
+         .\Win32\Release\ImfInputFile.obj
+         .\Win32\Release\ImfInputPart.obj
+         .\Win32\Release\ImfInputPartData.obj
+         .\Win32\Release\ImfIntAttribute.obj
+         .\Win32\Release\ImfIO.obj
+         .\Win32\Release\ImfKeyCode.obj
+         .\Win32\Release\ImfKeyCodeAttribute.obj
+         .\Win32\Release\ImfLineOrderAttribute.obj
+         .\Win32\Release\ImfLut.obj
+         .\Win32\Release\ImfMatrixAttribute.obj
+         .\Win32\Release\ImfMisc.obj
+         .\Win32\Release\ImfMultiPartInputFile.obj
+         .\Win32\Release\ImfMultiPartOutputFile.obj
+         .\Win32\Release\ImfMultiView.obj
+         .\Win32\Release\ImfOpaqueAttribute.obj
+         .\Win32\Release\ImfOutputFile.obj
+         .\Win32\Release\ImfOutputPart.obj
+         .\Win32\Release\ImfOutputPartData.obj
+         .\Win32\Release\ImfPartType.obj
+         .\Win32\Release\ImfPizCompressor.obj
+         .\Win32\Release\ImfPreviewImage.obj
+         .\Win32\Release\ImfPreviewImageAttribute.obj
+         .\Win32\Release\ImfPxr24Compressor.obj
+         .\Win32\Release\ImfRational.obj
+         .\Win32\Release\ImfRationalAttribute.obj
+         .\Win32\Release\ImfRgbaFile.obj
+         .\Win32\Release\ImfRgbaYca.obj
+         .\Win32\Release\ImfRle.obj
+         .\Win32\Release\ImfRleCompressor.obj
+         .\Win32\Release\ImfScanLineInputFile.obj
+         .\Win32\Release\ImfStandardAttributes.obj
+         .\Win32\Release\ImfStdIO.obj
+         .\Win32\Release\ImfStringAttribute.obj
+         .\Win32\Release\ImfStringVectorAttribute.obj
+         .\Win32\Release\ImfSystemSpecific.obj
+         .\Win32\Release\ImfTestFile.obj
+         .\Win32\Release\ImfThreading.obj
+         .\Win32\Release\ImfTileDescriptionAttribute.obj
+         .\Win32\Release\ImfTiledInputFile.obj
+         .\Win32\Release\ImfTiledInputPart.obj
+         .\Win32\Release\ImfTiledMisc.obj
+         .\Win32\Release\ImfTiledOutputFile.obj
+         .\Win32\Release\ImfTiledOutputPart.obj
+         .\Win32\Release\ImfTiledRgbaFile.obj
+         .\Win32\Release\ImfTileOffsets.obj
+         .\Win32\Release\ImfTimeCode.obj
+         .\Win32\Release\ImfTimeCodeAttribute.obj
+         .\Win32\Release\ImfVecAttribute.obj
+         .\Win32\Release\ImfVersion.obj
+         .\Win32\Release\ImfWav.obj
+         .\Win32\Release\ImfZip.obj
+         .\Win32\Release\ImfZipCompressor.obj
+         .\Win32\Release\ImathBox.obj
+         .\Win32\Release\ImathColorAlgo.obj
+         .\Win32\Release\ImathFun.obj
+         .\Win32\Release\ImathMatrixAlgo.obj
+         .\Win32\Release\ImathRandom.obj
+         .\Win32\Release\ImathShear.obj
+         .\Win32\Release\ImathVec.obj
+         .\Win32\Release\IexBaseExc.obj
+         .\Win32\Release\IexThrowErrnoExc.obj
+         .\Win32\Release\half.obj
+         .\Win32\Release\IlmThread.obj
+         .\Win32\Release\IlmThreadMutex.obj
+         .\Win32\Release\IlmThreadPool.obj
+         .\Win32\Release\IlmThreadSemaphore.obj
+         .\Win32\Release\IexMathFloatExc.obj
+         OpenEXR.2013.vcxproj -> C:\Users\Felix\Documents\cmakeExperiments\glstuff\external\FreeImage\Source\OpenEXR\.\Win32\Release\OpenEXR.lib
+     1>Done Building Project "C:\Users\Felix\Documents\cmakeExperiments\glstuff\external\FreeImage\Source\OpenEXR\OpenEXR.2013.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:01:20.83

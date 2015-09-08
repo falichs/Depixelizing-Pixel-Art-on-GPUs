@@ -1,0 +1,152 @@
+﻿Build started 07.09.2015 20:54:06.
+     1>Project "C:\Users\Felix\Documents\cmakeExperiments\glstuff\external\FreeImage\Source\LibTIFF4\LibTIFF4.2013.vcxproj" on node 2 (Build target(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\CL.exe /c /nologo /W3 /WX- /Ox /Ob1 /Oi /Ot /Oy /D WIN32 /D NDEBUG /D _LIB /D _CRT_SECURE_NO_DEPRECATE /D _VC80_UPGRADE=0x0710 /D _MBCS /GF /Gm- /EHsc /MT /GS- /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo".\Win32\Release\\" /Fd".\Win32\Release\LibTIFF4.pdb" /Gd /TC /analyze- /errorReport:prompt tif_aux.c tif_close.c tif_codec.c tif_color.c tif_compress.c tif_dir.c tif_dirinfo.c tif_dirread.c tif_dirwrite.c tif_dumpmode.c tif_error.c tif_extension.c tif_fax3.c tif_flush.c tif_getimage.c tif_jpeg.c tif_luv.c tif_lzma.c tif_lzw.c tif_next.c tif_ojpeg.c tif_open.c tif_packbits.c tif_pixarlog.c tif_predict.c tif_print.c tif_read.c tif_strip.c tif_swab.c tif_thunder.c tif_tile.c tif_version.c tif_warning.c tif_write.c tif_zip.c
+         tif_aux.c
+     1>C:\Program Files (x86)\Windows Kits\10\Include\10.0.10150.0\ucrt\stdio.h(1925): warning C4005: 'snprintf': macro redefinition
+         c:\users\felix\documents\cmakeexperiments\glstuff\external\freeimage\source\libtiff4\tif_config.h(84): note: see previous definition of 'snprintf'
+     1>C:\Program Files (x86)\Windows Kits\10\Include\10.0.10150.0\ucrt\stdio.h(1927): fatal error C1189: #error:  Macro definition of snprintf conflicts with Standard Library function declaration
+         tif_close.c
+     1>C:\Program Files (x86)\Windows Kits\10\Include\10.0.10150.0\ucrt\stdio.h(1925): warning C4005: 'snprintf': macro redefinition
+         c:\users\felix\documents\cmakeexperiments\glstuff\external\freeimage\source\libtiff4\tif_config.h(84): note: see previous definition of 'snprintf'
+     1>C:\Program Files (x86)\Windows Kits\10\Include\10.0.10150.0\ucrt\stdio.h(1927): fatal error C1189: #error:  Macro definition of snprintf conflicts with Standard Library function declaration
+         tif_codec.c
+     1>C:\Program Files (x86)\Windows Kits\10\Include\10.0.10150.0\ucrt\stdio.h(1925): warning C4005: 'snprintf': macro redefinition
+         c:\users\felix\documents\cmakeexperiments\glstuff\external\freeimage\source\libtiff4\tif_config.h(84): note: see previous definition of 'snprintf'
+     1>C:\Program Files (x86)\Windows Kits\10\Include\10.0.10150.0\ucrt\stdio.h(1927): fatal error C1189: #error:  Macro definition of snprintf conflicts with Standard Library function declaration
+         tif_color.c
+     1>C:\Program Files (x86)\Windows Kits\10\Include\10.0.10150.0\ucrt\stdio.h(1925): warning C4005: 'snprintf': macro redefinition
+         c:\users\felix\documents\cmakeexperiments\glstuff\external\freeimage\source\libtiff4\tif_config.h(84): note: see previous definition of 'snprintf'
+     1>C:\Program Files (x86)\Windows Kits\10\Include\10.0.10150.0\ucrt\stdio.h(1927): fatal error C1189: #error:  Macro definition of snprintf conflicts with Standard Library function declaration
+         tif_compress.c
+     1>C:\Program Files (x86)\Windows Kits\10\Include\10.0.10150.0\ucrt\stdio.h(1925): warning C4005: 'snprintf': macro redefinition
+         c:\users\felix\documents\cmakeexperiments\glstuff\external\freeimage\source\libtiff4\tif_config.h(84): note: see previous definition of 'snprintf'
+     1>C:\Program Files (x86)\Windows Kits\10\Include\10.0.10150.0\ucrt\stdio.h(1927): fatal error C1189: #error:  Macro definition of snprintf conflicts with Standard Library function declaration
+         tif_dir.c
+     1>C:\Program Files (x86)\Windows Kits\10\Include\10.0.10150.0\ucrt\stdio.h(1925): warning C4005: 'snprintf': macro redefinition
+         c:\users\felix\documents\cmakeexperiments\glstuff\external\freeimage\source\libtiff4\tif_config.h(84): note: see previous definition of 'snprintf'
+     1>C:\Program Files (x86)\Windows Kits\10\Include\10.0.10150.0\ucrt\stdio.h(1927): fatal error C1189: #error:  Macro definition of snprintf conflicts with Standard Library function declaration
+         tif_dirinfo.c
+     1>C:\Program Files (x86)\Windows Kits\10\Include\10.0.10150.0\ucrt\stdio.h(1925): warning C4005: 'snprintf': macro redefinition
+         c:\users\felix\documents\cmakeexperiments\glstuff\external\freeimage\source\libtiff4\tif_config.h(84): note: see previous definition of 'snprintf'
+     1>C:\Program Files (x86)\Windows Kits\10\Include\10.0.10150.0\ucrt\stdio.h(1927): fatal error C1189: #error:  Macro definition of snprintf conflicts with Standard Library function declaration
+         tif_dirread.c
+     1>C:\Program Files (x86)\Windows Kits\10\Include\10.0.10150.0\ucrt\stdio.h(1925): warning C4005: 'snprintf': macro redefinition
+         c:\users\felix\documents\cmakeexperiments\glstuff\external\freeimage\source\libtiff4\tif_config.h(84): note: see previous definition of 'snprintf'
+     1>C:\Program Files (x86)\Windows Kits\10\Include\10.0.10150.0\ucrt\stdio.h(1927): fatal error C1189: #error:  Macro definition of snprintf conflicts with Standard Library function declaration
+         tif_dirwrite.c
+     1>C:\Program Files (x86)\Windows Kits\10\Include\10.0.10150.0\ucrt\stdio.h(1925): warning C4005: 'snprintf': macro redefinition
+         c:\users\felix\documents\cmakeexperiments\glstuff\external\freeimage\source\libtiff4\tif_config.h(84): note: see previous definition of 'snprintf'
+     1>C:\Program Files (x86)\Windows Kits\10\Include\10.0.10150.0\ucrt\stdio.h(1927): fatal error C1189: #error:  Macro definition of snprintf conflicts with Standard Library function declaration
+         tif_dumpmode.c
+     1>C:\Program Files (x86)\Windows Kits\10\Include\10.0.10150.0\ucrt\stdio.h(1925): warning C4005: 'snprintf': macro redefinition
+         c:\users\felix\documents\cmakeexperiments\glstuff\external\freeimage\source\libtiff4\tif_config.h(84): note: see previous definition of 'snprintf'
+     1>C:\Program Files (x86)\Windows Kits\10\Include\10.0.10150.0\ucrt\stdio.h(1927): fatal error C1189: #error:  Macro definition of snprintf conflicts with Standard Library function declaration
+         tif_error.c
+     1>C:\Program Files (x86)\Windows Kits\10\Include\10.0.10150.0\ucrt\stdio.h(1925): warning C4005: 'snprintf': macro redefinition
+         c:\users\felix\documents\cmakeexperiments\glstuff\external\freeimage\source\libtiff4\tif_config.h(84): note: see previous definition of 'snprintf'
+     1>C:\Program Files (x86)\Windows Kits\10\Include\10.0.10150.0\ucrt\stdio.h(1927): fatal error C1189: #error:  Macro definition of snprintf conflicts with Standard Library function declaration
+         tif_extension.c
+     1>C:\Program Files (x86)\Windows Kits\10\Include\10.0.10150.0\ucrt\stdio.h(1925): warning C4005: 'snprintf': macro redefinition
+         c:\users\felix\documents\cmakeexperiments\glstuff\external\freeimage\source\libtiff4\tif_config.h(84): note: see previous definition of 'snprintf'
+     1>C:\Program Files (x86)\Windows Kits\10\Include\10.0.10150.0\ucrt\stdio.h(1927): fatal error C1189: #error:  Macro definition of snprintf conflicts with Standard Library function declaration
+         tif_fax3.c
+     1>C:\Program Files (x86)\Windows Kits\10\Include\10.0.10150.0\ucrt\stdio.h(1925): warning C4005: 'snprintf': macro redefinition
+         c:\users\felix\documents\cmakeexperiments\glstuff\external\freeimage\source\libtiff4\tif_config.h(84): note: see previous definition of 'snprintf'
+     1>C:\Program Files (x86)\Windows Kits\10\Include\10.0.10150.0\ucrt\stdio.h(1927): fatal error C1189: #error:  Macro definition of snprintf conflicts with Standard Library function declaration
+         tif_flush.c
+     1>C:\Program Files (x86)\Windows Kits\10\Include\10.0.10150.0\ucrt\stdio.h(1925): warning C4005: 'snprintf': macro redefinition
+         c:\users\felix\documents\cmakeexperiments\glstuff\external\freeimage\source\libtiff4\tif_config.h(84): note: see previous definition of 'snprintf'
+     1>C:\Program Files (x86)\Windows Kits\10\Include\10.0.10150.0\ucrt\stdio.h(1927): fatal error C1189: #error:  Macro definition of snprintf conflicts with Standard Library function declaration
+         tif_getimage.c
+     1>C:\Program Files (x86)\Windows Kits\10\Include\10.0.10150.0\ucrt\stdio.h(1925): warning C4005: 'snprintf': macro redefinition
+         c:\users\felix\documents\cmakeexperiments\glstuff\external\freeimage\source\libtiff4\tif_config.h(84): note: see previous definition of 'snprintf'
+     1>C:\Program Files (x86)\Windows Kits\10\Include\10.0.10150.0\ucrt\stdio.h(1927): fatal error C1189: #error:  Macro definition of snprintf conflicts with Standard Library function declaration
+         tif_jpeg.c
+     1>C:\Program Files (x86)\Windows Kits\10\Include\10.0.10150.0\ucrt\stdio.h(1925): warning C4005: 'snprintf': macro redefinition
+         c:\users\felix\documents\cmakeexperiments\glstuff\external\freeimage\source\libtiff4\tif_config.h(84): note: see previous definition of 'snprintf'
+     1>C:\Program Files (x86)\Windows Kits\10\Include\10.0.10150.0\ucrt\stdio.h(1927): fatal error C1189: #error:  Macro definition of snprintf conflicts with Standard Library function declaration
+         tif_luv.c
+     1>C:\Program Files (x86)\Windows Kits\10\Include\10.0.10150.0\ucrt\stdio.h(1925): warning C4005: 'snprintf': macro redefinition
+         c:\users\felix\documents\cmakeexperiments\glstuff\external\freeimage\source\libtiff4\tif_config.h(84): note: see previous definition of 'snprintf'
+     1>C:\Program Files (x86)\Windows Kits\10\Include\10.0.10150.0\ucrt\stdio.h(1927): fatal error C1189: #error:  Macro definition of snprintf conflicts with Standard Library function declaration
+         tif_lzma.c
+     1>C:\Program Files (x86)\Windows Kits\10\Include\10.0.10150.0\ucrt\stdio.h(1925): warning C4005: 'snprintf': macro redefinition
+         c:\users\felix\documents\cmakeexperiments\glstuff\external\freeimage\source\libtiff4\tif_config.h(84): note: see previous definition of 'snprintf'
+     1>C:\Program Files (x86)\Windows Kits\10\Include\10.0.10150.0\ucrt\stdio.h(1927): fatal error C1189: #error:  Macro definition of snprintf conflicts with Standard Library function declaration
+         tif_lzw.c
+     1>C:\Program Files (x86)\Windows Kits\10\Include\10.0.10150.0\ucrt\stdio.h(1925): warning C4005: 'snprintf': macro redefinition
+         c:\users\felix\documents\cmakeexperiments\glstuff\external\freeimage\source\libtiff4\tif_config.h(84): note: see previous definition of 'snprintf'
+     1>C:\Program Files (x86)\Windows Kits\10\Include\10.0.10150.0\ucrt\stdio.h(1927): fatal error C1189: #error:  Macro definition of snprintf conflicts with Standard Library function declaration
+         tif_next.c
+     1>C:\Program Files (x86)\Windows Kits\10\Include\10.0.10150.0\ucrt\stdio.h(1925): warning C4005: 'snprintf': macro redefinition
+         c:\users\felix\documents\cmakeexperiments\glstuff\external\freeimage\source\libtiff4\tif_config.h(84): note: see previous definition of 'snprintf'
+     1>C:\Program Files (x86)\Windows Kits\10\Include\10.0.10150.0\ucrt\stdio.h(1927): fatal error C1189: #error:  Macro definition of snprintf conflicts with Standard Library function declaration
+         Generating Code...
+         Compiling...
+         tif_ojpeg.c
+     1>C:\Program Files (x86)\Windows Kits\10\Include\10.0.10150.0\ucrt\stdio.h(1925): warning C4005: 'snprintf': macro redefinition
+         c:\users\felix\documents\cmakeexperiments\glstuff\external\freeimage\source\libtiff4\tif_config.h(84): note: see previous definition of 'snprintf'
+     1>C:\Program Files (x86)\Windows Kits\10\Include\10.0.10150.0\ucrt\stdio.h(1927): fatal error C1189: #error:  Macro definition of snprintf conflicts with Standard Library function declaration
+         tif_open.c
+     1>C:\Program Files (x86)\Windows Kits\10\Include\10.0.10150.0\ucrt\stdio.h(1925): warning C4005: 'snprintf': macro redefinition
+         c:\users\felix\documents\cmakeexperiments\glstuff\external\freeimage\source\libtiff4\tif_config.h(84): note: see previous definition of 'snprintf'
+     1>C:\Program Files (x86)\Windows Kits\10\Include\10.0.10150.0\ucrt\stdio.h(1927): fatal error C1189: #error:  Macro definition of snprintf conflicts with Standard Library function declaration
+         tif_packbits.c
+     1>C:\Program Files (x86)\Windows Kits\10\Include\10.0.10150.0\ucrt\stdio.h(1925): warning C4005: 'snprintf': macro redefinition
+         c:\users\felix\documents\cmakeexperiments\glstuff\external\freeimage\source\libtiff4\tif_config.h(84): note: see previous definition of 'snprintf'
+     1>C:\Program Files (x86)\Windows Kits\10\Include\10.0.10150.0\ucrt\stdio.h(1927): fatal error C1189: #error:  Macro definition of snprintf conflicts with Standard Library function declaration
+         tif_pixarlog.c
+     1>C:\Program Files (x86)\Windows Kits\10\Include\10.0.10150.0\ucrt\stdio.h(1925): warning C4005: 'snprintf': macro redefinition
+         c:\users\felix\documents\cmakeexperiments\glstuff\external\freeimage\source\libtiff4\tif_config.h(84): note: see previous definition of 'snprintf'
+     1>C:\Program Files (x86)\Windows Kits\10\Include\10.0.10150.0\ucrt\stdio.h(1927): fatal error C1189: #error:  Macro definition of snprintf conflicts with Standard Library function declaration
+         tif_predict.c
+     1>C:\Program Files (x86)\Windows Kits\10\Include\10.0.10150.0\ucrt\stdio.h(1925): warning C4005: 'snprintf': macro redefinition
+         c:\users\felix\documents\cmakeexperiments\glstuff\external\freeimage\source\libtiff4\tif_config.h(84): note: see previous definition of 'snprintf'
+     1>C:\Program Files (x86)\Windows Kits\10\Include\10.0.10150.0\ucrt\stdio.h(1927): fatal error C1189: #error:  Macro definition of snprintf conflicts with Standard Library function declaration
+         tif_print.c
+     1>C:\Program Files (x86)\Windows Kits\10\Include\10.0.10150.0\ucrt\stdio.h(1925): warning C4005: 'snprintf': macro redefinition
+         c:\users\felix\documents\cmakeexperiments\glstuff\external\freeimage\source\libtiff4\tif_config.h(84): note: see previous definition of 'snprintf'
+     1>C:\Program Files (x86)\Windows Kits\10\Include\10.0.10150.0\ucrt\stdio.h(1927): fatal error C1189: #error:  Macro definition of snprintf conflicts with Standard Library function declaration
+         tif_read.c
+     1>C:\Program Files (x86)\Windows Kits\10\Include\10.0.10150.0\ucrt\stdio.h(1925): warning C4005: 'snprintf': macro redefinition
+         c:\users\felix\documents\cmakeexperiments\glstuff\external\freeimage\source\libtiff4\tif_config.h(84): note: see previous definition of 'snprintf'
+     1>C:\Program Files (x86)\Windows Kits\10\Include\10.0.10150.0\ucrt\stdio.h(1927): fatal error C1189: #error:  Macro definition of snprintf conflicts with Standard Library function declaration
+         tif_strip.c
+     1>C:\Program Files (x86)\Windows Kits\10\Include\10.0.10150.0\ucrt\stdio.h(1925): warning C4005: 'snprintf': macro redefinition
+         c:\users\felix\documents\cmakeexperiments\glstuff\external\freeimage\source\libtiff4\tif_config.h(84): note: see previous definition of 'snprintf'
+     1>C:\Program Files (x86)\Windows Kits\10\Include\10.0.10150.0\ucrt\stdio.h(1927): fatal error C1189: #error:  Macro definition of snprintf conflicts with Standard Library function declaration
+         tif_swab.c
+     1>C:\Program Files (x86)\Windows Kits\10\Include\10.0.10150.0\ucrt\stdio.h(1925): warning C4005: 'snprintf': macro redefinition
+         c:\users\felix\documents\cmakeexperiments\glstuff\external\freeimage\source\libtiff4\tif_config.h(84): note: see previous definition of 'snprintf'
+     1>C:\Program Files (x86)\Windows Kits\10\Include\10.0.10150.0\ucrt\stdio.h(1927): fatal error C1189: #error:  Macro definition of snprintf conflicts with Standard Library function declaration
+         tif_thunder.c
+     1>C:\Program Files (x86)\Windows Kits\10\Include\10.0.10150.0\ucrt\stdio.h(1925): warning C4005: 'snprintf': macro redefinition
+         c:\users\felix\documents\cmakeexperiments\glstuff\external\freeimage\source\libtiff4\tif_config.h(84): note: see previous definition of 'snprintf'
+     1>C:\Program Files (x86)\Windows Kits\10\Include\10.0.10150.0\ucrt\stdio.h(1927): fatal error C1189: #error:  Macro definition of snprintf conflicts with Standard Library function declaration
+         tif_tile.c
+     1>C:\Program Files (x86)\Windows Kits\10\Include\10.0.10150.0\ucrt\stdio.h(1925): warning C4005: 'snprintf': macro redefinition
+         c:\users\felix\documents\cmakeexperiments\glstuff\external\freeimage\source\libtiff4\tif_config.h(84): note: see previous definition of 'snprintf'
+     1>C:\Program Files (x86)\Windows Kits\10\Include\10.0.10150.0\ucrt\stdio.h(1927): fatal error C1189: #error:  Macro definition of snprintf conflicts with Standard Library function declaration
+         tif_version.c
+     1>C:\Program Files (x86)\Windows Kits\10\Include\10.0.10150.0\ucrt\stdio.h(1925): warning C4005: 'snprintf': macro redefinition
+         c:\users\felix\documents\cmakeexperiments\glstuff\external\freeimage\source\libtiff4\tif_config.h(84): note: see previous definition of 'snprintf'
+     1>C:\Program Files (x86)\Windows Kits\10\Include\10.0.10150.0\ucrt\stdio.h(1927): fatal error C1189: #error:  Macro definition of snprintf conflicts with Standard Library function declaration
+         tif_warning.c
+     1>C:\Program Files (x86)\Windows Kits\10\Include\10.0.10150.0\ucrt\stdio.h(1925): warning C4005: 'snprintf': macro redefinition
+         c:\users\felix\documents\cmakeexperiments\glstuff\external\freeimage\source\libtiff4\tif_config.h(84): note: see previous definition of 'snprintf'
+     1>C:\Program Files (x86)\Windows Kits\10\Include\10.0.10150.0\ucrt\stdio.h(1927): fatal error C1189: #error:  Macro definition of snprintf conflicts with Standard Library function declaration
+         tif_write.c
+     1>C:\Program Files (x86)\Windows Kits\10\Include\10.0.10150.0\ucrt\stdio.h(1925): warning C4005: 'snprintf': macro redefinition
+         c:\users\felix\documents\cmakeexperiments\glstuff\external\freeimage\source\libtiff4\tif_config.h(84): note: see previous definition of 'snprintf'
+     1>C:\Program Files (x86)\Windows Kits\10\Include\10.0.10150.0\ucrt\stdio.h(1927): fatal error C1189: #error:  Macro definition of snprintf conflicts with Standard Library function declaration
+         tif_zip.c
+     1>C:\Program Files (x86)\Windows Kits\10\Include\10.0.10150.0\ucrt\stdio.h(1925): warning C4005: 'snprintf': macro redefinition
+         c:\users\felix\documents\cmakeexperiments\glstuff\external\freeimage\source\libtiff4\tif_config.h(84): note: see previous definition of 'snprintf'
+     1>C:\Program Files (x86)\Windows Kits\10\Include\10.0.10150.0\ucrt\stdio.h(1927): fatal error C1189: #error:  Macro definition of snprintf conflicts with Standard Library function declaration
+         Generating Code...
+     1>Done Building Project "C:\Users\Felix\Documents\cmakeExperiments\glstuff\external\FreeImage\Source\LibTIFF4\LibTIFF4.2013.vcxproj" (Build target(s)) -- FAILED.
+
+Build FAILED.
+
+Time Elapsed 00:00:01.70

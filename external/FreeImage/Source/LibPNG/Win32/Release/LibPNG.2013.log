@@ -1,0 +1,42 @@
+﻿Build started 07.09.2015 20:51:22.
+     1>Project "C:\Users\Felix\Documents\cmakeExperiments\glstuff\external\FreeImage\Source\LibPNG\LibPNG.2013.vcxproj" on node 2 (Build target(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\CL.exe /c /I..\zlib /nologo /W3 /WX- /Ox /Ob1 /Oi /Ot /Oy /D WIN32 /D NDEBUG /D _LIB /D _CRT_SECURE_NO_DEPRECATE /D _VC80_UPGRADE=0x0710 /D _MBCS /GF /Gm- /EHsc /MT /GS- /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo".\Win32\Release\\" /Fd".\Win32\Release\LibPNG.pdb" /Gd /TC /analyze- /errorReport:prompt png.c pngerror.c pngget.c pngmem.c pngpread.c pngread.c pngrio.c pngrtran.c pngrutil.c pngset.c pngtrans.c pngwio.c pngwrite.c pngwtran.c pngwutil.c
+         png.c
+         pngerror.c
+         pngget.c
+         pngmem.c
+         pngpread.c
+         pngread.c
+         pngrio.c
+         pngrtran.c
+         pngrutil.c
+         pngset.c
+         pngtrans.c
+         pngwio.c
+         pngwrite.c
+         pngwtran.c
+         pngwutil.c
+         Generating Code...
+       Lib:
+         C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\Lib.exe /OUT:".\Win32\Release\LibPNG.lib" /NOLOGO /LTCG .\Win32\Release\png.obj
+         .\Win32\Release\pngerror.obj
+         .\Win32\Release\pngget.obj
+         .\Win32\Release\pngmem.obj
+         .\Win32\Release\pngpread.obj
+         .\Win32\Release\pngread.obj
+         .\Win32\Release\pngrio.obj
+         .\Win32\Release\pngrtran.obj
+         .\Win32\Release\pngrutil.obj
+         .\Win32\Release\pngset.obj
+         .\Win32\Release\pngtrans.obj
+         .\Win32\Release\pngwio.obj
+         .\Win32\Release\pngwrite.obj
+         .\Win32\Release\pngwtran.obj
+         .\Win32\Release\pngwutil.obj
+         LibPNG.2013.vcxproj -> C:\Users\Felix\Documents\cmakeExperiments\glstuff\external\FreeImage\Source\LibPNG\.\Win32\Release\LibPNG.lib
+     1>Done Building Project "C:\Users\Felix\Documents\cmakeExperiments\glstuff\external\FreeImage\Source\LibPNG\LibPNG.2013.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:10.98

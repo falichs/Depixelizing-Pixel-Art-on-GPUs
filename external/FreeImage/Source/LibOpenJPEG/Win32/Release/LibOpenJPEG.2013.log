@@ -1,0 +1,52 @@
+﻿Build started 07.09.2015 20:51:20.
+     1>Project "C:\Users\Felix\Documents\cmakeExperiments\glstuff\external\FreeImage\Source\LibOpenJPEG\LibOpenJPEG.2013.vcxproj" on node 5 (Build target(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\CL.exe /c /nologo /W3 /WX- /O2 /Ob1 /Oi /Ot /Oy /D WIN32 /D NDEBUG /D _LIB /D OPJ_STATIC /D _CRT_SECURE_NO_DEPRECATE /D _VC80_UPGRADE=0x0710 /D _MBCS /GF /Gm- /EHsc /MT /GS- /Gy- /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo".\Win32\Release\\" /Fd".\Win32\Release\LibOpenJPEG.pdb" /Gd /TC /analyze- /errorReport:prompt bio.c cio.c dwt.c event.c image.c j2k.c jp2.c mct.c mqc.c openjpeg.c pi.c raw.c t1.c t2.c tcd.c tgt.c
+         bio.c
+         cio.c
+         dwt.c
+         event.c
+         image.c
+         j2k.c
+         jp2.c
+         mct.c
+         mqc.c
+         openjpeg.c
+         pi.c
+         raw.c
+         t1.c
+         t2.c
+         tcd.c
+         tgt.c
+         Generating Code...
+         C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\CL.exe /c /nologo /W3 /WX- /Ox /Ob1 /Oi /Ot /Oy /D WIN32 /D NDEBUG /D _LIB /D OPJ_STATIC /D _CRT_SECURE_NO_DEPRECATE /D _VC80_UPGRADE=0x0710 /D _MBCS /GF /Gm- /EHsc /MT /GS- /Gy- /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo".\Win32\Release\\" /Fd".\Win32\Release\LibOpenJPEG.pdb" /Gd /TC /analyze- /errorReport:prompt function_list.c invert.c opj_clock.c
+         function_list.c
+         invert.c
+         opj_clock.c
+         Generating Code...
+       Lib:
+         C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\Lib.exe /OUT:".\Win32\Release\LibOpenJPEG.lib" /NOLOGO /LTCG .\Win32\Release\bio.obj
+         .\Win32\Release\cio.obj
+         .\Win32\Release\dwt.obj
+         .\Win32\Release\event.obj
+         .\Win32\Release\function_list.obj
+         .\Win32\Release\image.obj
+         .\Win32\Release\invert.obj
+         .\Win32\Release\j2k.obj
+         .\Win32\Release\jp2.obj
+         .\Win32\Release\mct.obj
+         .\Win32\Release\mqc.obj
+         .\Win32\Release\openjpeg.obj
+         .\Win32\Release\opj_clock.obj
+         .\Win32\Release\pi.obj
+         .\Win32\Release\raw.obj
+         .\Win32\Release\t1.obj
+         .\Win32\Release\t2.obj
+         .\Win32\Release\tcd.obj
+         .\Win32\Release\tgt.obj
+         LibOpenJPEG.2013.vcxproj -> C:\Users\Felix\Documents\cmakeExperiments\glstuff\external\FreeImage\Source\LibOpenJPEG\.\Win32\Release\LibOpenJPEG.lib
+     1>Done Building Project "C:\Users\Felix\Documents\cmakeExperiments\glstuff\external\FreeImage\Source\LibOpenJPEG\LibOpenJPEG.2013.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:06.41
