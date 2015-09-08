@@ -5,19 +5,19 @@ THIS SOFTWARE WAS TESTED ON WINDOWS WITH NVIDIA GPUs ONLY!
 IT WILL NOT RUN ON INTEL GPUs
 
 This application is intended to be a preview for my gpu-supported implementation of the DEPIXELIZING PIXEL ART algorithm.
-You can either load a single image, or a sequence of images(images in a sequence must have the same resolution).
-The Window title display the current rendering speed. See section controls below for usage.
+You can either load a single image, or a sequence of images (images in a sequence must have the same resolution).
+The window title displays the current rendering speed. See section controls below for usage.
 
 ========== BUILDING FROM SOURCE: ==========
 
 Requirements:
-CMAKE(http://www.cmake.org/) to configure and generate a Visual Studio Solution.
+CMAKE(http://www.cmake.org/) to configure and generate a Visual Studio solution.
 
-This Project requires boost::program_options
-easy way to get it:
-download boost source from boost.org
-set BOOST_ROOT environment variable to the path which contains the boost source.
-open up a command prompt and enter the following commands:
+This project requires boost::program_options.
+Easy way to get it:
+Download boost source from boost.org.
+Set BOOST_ROOT environment variable to the path which contains the boost source.
+Open up a command prompt and enter the following commands:
 
 cd %BOOST_ROOT%
 bootstrap
@@ -34,9 +34,9 @@ Usage: GPUPixelArt.exe [options]
 Allowed options:
   --help                      produce help message
   -I [ --input-file ] arg     input file
-  -S [ --input-sequence ] arg input seqence name
-  --sequence-count arg        input seqence count
-  --sequence-fps arg (=15)         input seqence playback fps
+  -S [ --input-sequence ] arg input sequence name
+  --sequence-count arg        input sequence count
+  --sequence-fps arg (=15)    input sequence playback fps
   --height arg (=600)         output vertical size in pixel
 
 Use either the -I or the -S options!
@@ -44,11 +44,11 @@ If you want to use the sequence option -S then do not forget to add the --sequen
 
 Make a release build and extract examples.zip to a directory above the binary directory.
 Feel free to try the startXXX.bat files. You can use them to start the supplemented image sequences.
-I do not own any copyrights to the pictures in examples.zip (copyrights owned by Nintendo Co., Ltd.)
+I do not own any copyrights to the pictures in examples.zip (copyrights owned by Nintendo Co., Ltd.).
 
 ========== CONTROLS: =========
-SPACE 			... pause sequence
-MOUSEWHEEL 		... control zoom
+SPACE 					... pause sequence
+MOUSEWHEEL 				... control zoom
 LEFT_SHIFT + MOUSEWHEEL	... change sequence playback speed
 
 DEBUGGING:
