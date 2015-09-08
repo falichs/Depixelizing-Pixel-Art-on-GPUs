@@ -1,0 +1,55 @@
+/**
+\mainpage Overview
+<h1>Depixelizing PixelArt in Realtime</h1>
+This is the code documentation for my GPU accelerated implemenation of the <a href="http://research.microsoft.com/en-us/um/people/kopf/pixelart/">"depixelizing Pixel Art" paper by Johannens Kopf and Dani Lischinski</a>.
+<h1>Prerequisites</h1>
+In order to successfully compile and run this this piece of sofware you need the following external libraries:
+<UL>
+<LI><a href="http://www.glfw.org/">GLFW</a></LI>
+<LI><a href="http://glew.sourceforge.net/">GLEW</a></LI>
+<LI><a href="http://freeimage.sourceforge.net/">FreeImage</a></LI>
+<LI><a href="http://www.boost.org/doc/libs/1_55_0/doc/html/program_options.html">boost::program_options</a></LI>
+</UL>
+<h1>Running the Programm</h1>
+Start the program via the commandline using <TT>GPUPixelArt.exe</TT> this will show you a list of available program arguments.
+<BR>
+The most common argument might be the <TT>GPUPixelArt.exe -I somefile.png</TT> argument which displays a single Depixelized Pixel Art image.
+<h2>Hotkeys</h2>
+<UL>
+<LI>F1 ... cycle debugging outputs</LI>
+<LI>F2 ... draw debug overlays (where available)</LI>
+<LI>F3 ... toggle B-Spline optimization</LI>
+<LI>SPACE ... pause sequence (where available)</LI>
+</UL>
+<h1>Coarse Structure & Data Flow</h1>
+<p>main.cpp contains initialization of the PixelArtRenderer class which is subsequently used in main rendering loop to draw frames</p>
+<p>The PixelArtRenderer class is the core component of the rendering engine. 
+It controls all the dataflow for rendering a frame including texture unit management, input handling etc. 
+When a frame is drawn it calls the draw() methods of the following classes:
+<OL>
+<LI>SimilarityGraphBuilder which computes a graph representing pixel connectivity called the Similarity Graph.</LI>
+<LI>CellGraphBuilder which computes B-Spline Control Points, defining the contours of the Depixelized Pixel Art.</LI>
+<LI>and finally GaussRasterizer which rasterizes the image and creates contours where the B-Splines are defined.</LI>
+</OL>
+</p>
+<h1>How the rendering algorithms work:</h1>
+As previously mentioned the rendering process consisits of 3 stages:
+<h2>Similarity Graph Construction</h2>
+This stage produces a Datastructure representing a regular grid containing connectivity information between pixels from the original Pixel Art image.
+This grid is called the Similarity Graph (see <a href="http://research.microsoft.com/en-us/um/people/kopf/pixelart/">the original paper</a>) and it's constructed by connecting Pixels that have similar colors.
+
+@see SimilarityGraphBuilder
+
+<h2>B-Spline Control Point Extraction and Optimization</h2>
+
+@see CellGraphBuilder
+
+<h3>B-spline Control Point initialization</h3>
+Once the Similarity Graph is ready the algorithm computes control points in between the connected regions emerged from the Similarity Graph.
+<h3>B-spline Control Point optimization</h3>
+In order to smooth out the B-Spline curves a <a href="http://www.haoli.org/nr/bookcpdf/c10-1.pdf">Golden Section Search algorithm</a> is applied.
+<h2>Rasterization</h2>
+The GaussRasterizer produces colored shapes with sharp contours defines by the B-Splines computed before and smooth transitions between non contour colored regions.
+<BR>
+&copy; Felix Kreuzer, falichs@gmail.com
+*/
