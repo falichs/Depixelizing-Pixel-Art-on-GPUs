@@ -28,7 +28,6 @@ b2 --with-program_options
 Then open CMAKE and set the source directory to this directory. Choose any binary directory you want and give it a go.
 
 ========== STARTUP: ==========
-The main executable is located in the \bin directory
 
 Usage: GPUPixelArt.exe [options]
 Allowed options:
@@ -42,7 +41,7 @@ Allowed options:
 Use either the -I or the -S options!
 If you want to use the sequence option -S then do not forget to add the --sequence-count and --sequence-fps arguments!
 
-Make a release build and extract examples.zip to a directory above the binary directory.
+Make a release build and extract examples.zip into the "bin" directory (the directory where the Release folder is located in).
 Feel free to try the startXXX.bat files. You can use them to start the supplemented image sequences.
 I do not own any copyrights to the pictures in examples.zip (copyrights owned by Nintendo Co., Ltd.).
 
@@ -50,6 +49,8 @@ I do not own any copyrights to the pictures in examples.zip (copyrights owned by
 SPACE 					... pause sequence
 MOUSEWHEEL 				... control zoom
 LEFT_SHIFT + MOUSEWHEEL	... change sequence playback speed
+
+S 						... screenshot 
 
 DEBUGGING:
 F1		... draw depixelized Pixel Art (default)

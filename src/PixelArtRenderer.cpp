@@ -223,14 +223,11 @@ PixelArtRenderer::PixelArtRenderer() {
 }
 
 PixelArtRenderer::~PixelArtRenderer() {
-
-	//dynamic arrays
 	delete [] DrawBuffers;
 	delete pixelArtImage;
 	delete m_similarityGraphBuilder;
 	delete m_voronoiCellGraph3x3;
 	delete m_cellGraphBuilder;
-	//delete m_hoffRasterizer;
 	delete m_simGraphDebugToy;
 	delete m_gaussRasterizer;
 }
@@ -259,35 +256,15 @@ int PixelArtRenderer::initGraphics()
 	glfwWindowHint(GLFW_ALPHA_BITS, 0); // try something else maybe?
 	glfwWindowHint(GLFW_DEPTH_BITS , 32);
 	glfwWindowHint(GLFW_STENCIL_BITS  , 0);
-	/*
-	glfwOpenWindowHint(GLFW_FSAA_SAMPLES, 4);
-	glfwOpenWindowHint(GLFW_OPENGL_VERSION_MAJOR, 3);
-	glfwOpenWindowHint(GLFW_OPENGL_VERSION_MINOR, 3);
-	glfwOpenWindowHint(GLFW_OPENGL_PROFILE, GLFW_OPENGL_CORE_PROFILE);
-	*/
+
 	// Open a window and create its OpenGL context
 	m_window = glfwCreateWindow(window_width, window_heigth, "Depixelizing Pixel Art", NULL, NULL);
-	/*
-	if( !glfwOpenWindow( window_width, window_heigth, 0,0,0,0, 32,0, GLFW_WINDOW ) )
-	{
-		fprintf( stderr, "Failed to open GLFW window. If you have an Intel GPU, they are not 3.3 compatible.\n" );
-		glfwTerminate();
-		return -1;
-	}
-	*/
 	if(!m_window) {
         fprintf( stderr, "Failed to open GLFW window.\n" );
-        
         glfwTerminate();
         return 1;
     }
-	/*
-	int v_min;
-	int v_maj;
-	int v_ref;
-	glfwGetGLVersion(&v_maj,&v_min,&v_ref);
-	fprintf( stdout, "Your OpenGL Version: %i . %i . %i \n", v_maj, v_min, v_ref );
-	*/
+	
 	glfwMakeContextCurrent(m_window);
 	// Initialize GLEW
 	glewExperimental = GL_TRUE;
@@ -296,13 +273,7 @@ int PixelArtRenderer::initGraphics()
 
 	// Ensure we can capture the escape key being pressed below
 	glfwSetInputMode(m_window, GLFW_STICKY_KEYS, GL_TRUE );
-	/*
-	glfwEnable( GLFW_STICKY_KEYS );
-	glfwSetWindowSizeCallback(&resizeFun);
-	glfwSetKeyCallback(&cbfun);
-	glfwSetMouseWheelCallback(&mwfun);
-	glfwGetMousePos(&m_mouse_lastPos_x, &m_mouse_lastPos_y);
-	*/
+
 	resizeFun(m_window, 800,600);
 	glfwSetWindowSizeCallback(m_window, &resizeFun);
 	glfwSetKeyCallback(m_window, &cbfun);
@@ -315,6 +286,15 @@ int PixelArtRenderer::initGraphics()
 		fprintf(stderr, "Failed to initialize GLEW\n");
 		return -1;
 	}
+	if (GLEW_VERSION_3_3)
+	{
+		fprintf(stdout, "OpenGL 3.3 is supported!\n");
+	}
+	else
+	{
+		fprintf(stdout, "OpenGL 3.3 is NOT supported!\n");
+		return -1;
+	}
 	glGetError();
 	glEnable(GL_DEPTH_TEST);
 	glDepthFunc(GL_LESS);
@@ -323,8 +303,6 @@ int PixelArtRenderer::initGraphics()
 }
 
 bool PixelArtRenderer::initConstructionContent() {
-
-	//this->setupCellGraphConstructionContent();
 	m_similarityGraphBuilder = new SimilarityGraphBuilderFS(pixelArtImage, DrawBuffers, texUnit_similarityGraph, texUnit_updatedSimilarityGraph);
 	m_voronoiCellGraph3x3 = new VoronoiCellGraph3x3(pixelArtImage, DrawBuffers, m_similarityGraphBuilder);
 	m_cellGraphBuilder = new CellGraphBuilder(pixelArtImage, DrawBuffers, m_similarityGraphBuilder, texUnit_indexedCellPositions, texUnit_CellFlags, texUnit_knotNeighbors, texUnit_optimizedPositions, texUnit_correctedPositions);
@@ -332,23 +310,25 @@ bool PixelArtRenderer::initConstructionContent() {
 	m_simGraphDebugToy = new SimilarityGraphDebugToy(pixelArtImage, m_similarityGraphBuilder, DrawBuffers);
 	
 	m_gaussRasterizer = new GaussRasterizer(pixelArtImage, DrawBuffers, m_cellGraphBuilder);
-	//m_hoffRasterizer = new HoffRasterizerGS(pixelArtImage, DrawBuffers, m_cellGraphBuilder);
-	//m_cellSpaceGrid = new CellSpaceGrid(pixelArtImage, DrawBuffers);
 	return true;
 }
 
-void PixelArtRenderer::loadPixelArt(const char *filename) {
-	pixelArtImage = new Image(filename, texUnit_pixelArt);
+bool PixelArtRenderer::loadPixelArt(const char *filename) {
+	bool success;
+	pixelArtImage = new Image(filename, texUnit_pixelArt, success);
 	aspectRatio = ((float)pixelArtImage->getWidth()) / ((float)pixelArtImage->getHeight());
 	resizeFun(m_window, window_width,window_heigth);
+	return success;
 }
 
-GLenum PixelArtRenderer::loadPixelArtSequence(const std::string filename, int count, float fps) {
-	glGetError();
+bool PixelArtRenderer::loadPixelArtSequence(const std::string filename, int count, float fps) {
+	bool returner = true;
 	for (int item = 0; item < count; item++) {
 		std::stringstream ss;
 		ss << std::setfill('0') << std::setw(4) << item;
-		m_img_vector.push_back(new Image((filename + ss.str() + ".png").c_str(), texUnit_pixelArt));
+		bool success;
+		m_img_vector.push_back(new Image((filename + ss.str() + ".png").c_str(), texUnit_pixelArt, success));
+		returner = returner && success;
 	}
 	
 	m_isSequence = true;
@@ -357,7 +337,7 @@ GLenum PixelArtRenderer::loadPixelArtSequence(const std::string filename, int co
 	resizeFun(m_window, window_width,window_heigth);
 	m_sequence_fps = fps;
 	m_sequence_count = count;
-	return glGetError();
+	return returner;
 }
 
 void PixelArtRenderer::sequenceLoadFrame(double time) {
@@ -419,11 +399,6 @@ void PixelArtRenderer::drawFrame(double time) {
 			m_cellSpaceGrid->draw(window_width, window_heigth);
 		}*/
 		break;
-	/*case renderMode::HOFFRASTERIZER:
-		m_cellGraphBuilder->optimize(false);
-		m_cellGraphBuilder->draw();
-		m_hoffRasterizer->draw(window_width, window_heigth);
-		break;*/
 	case renderMode::GAUSSRASTERIZER:
 		if (m_opt) {
 			m_cellGraphBuilder->optimize(true);
@@ -477,16 +452,31 @@ void PixelArtRenderer::saveNextFrame() {
 }
 
 void PixelArtRenderer::saveFrame() {
-	// Make the BYTE array, factor of 3 because it's RBG.
+	// Make the BYTE array, factor of 4 because it's RBGA.
 	BYTE* pixels = new BYTE[ 4 * window_width * window_heigth];
 	glBindFramebuffer(GL_READ_FRAMEBUFFER,0);
 	glReadPixels(0, 0, window_width, window_heigth, GL_BGRA, GL_UNSIGNED_BYTE, pixels);
-
+	FreeImage_Initialise();
 	// Convert to FreeImage format & save to file
-	FIBITMAP* image = FreeImage_ConvertFromRawBits(pixels, window_width, window_heigth, 4 * window_width, 32,0x0000FF00 , 0x00FF0000,0xFF000000 , false);
-	FreeImage_Save(FIF_BMP, image, "./frame.bmp", 0);
-	fprintf_s(stdout, "frame saved to ./frame.bmp\n");
+	FIBITMAP* image = FreeImage_ConvertFromRawBits(pixels, window_width, window_heigth, 4 * window_width, 32,0x0000FF00 , 0x00FF0000, 0xFF000000 , false);
+	if (!image)
+	{
+		fprintf_s(stderr, "Cannot read bits from framebuffer.\n");
+	}
+	else 
+	{
+		if (FreeImage_Save(FIF_PNG, image, "frame.png", PNG_DEFAULT))
+		{
+			fprintf_s(stdout, "Frame saved to ./frame.png\n");
+		}
+		else
+		{
+			fprintf_s(stderr, "Could not save frame to ./frame.png\n");
+		}
+	}
+	
 	// Free resources
 	FreeImage_Unload(image);
+	FreeImage_DeInitialise();
 	delete [] pixels;
 }

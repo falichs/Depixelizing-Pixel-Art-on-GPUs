@@ -30,7 +30,7 @@ public:
 	* @param image_path path to Pixel Art image file
 	* @param textureUnit specifies which texture unit the image is associated with.
 	*/
-	Image(const char* image_path, GLuint textureUnit);
+	Image(const char* image_path, GLuint textureUnit, bool& success);
 
 	/**
 	* Image class destructor.

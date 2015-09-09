@@ -118,35 +118,13 @@ int main( int argc, char* argv[] )
 	}
 	renderer->resizeFun(renderer->getWindow(),0,height);
 	if(useSequence) {
-		GLenum gl_err = renderer->loadPixelArtSequence(sequence_name, sequence_count, sequence_fps);
-		switch(gl_err) {
-			case GL_INVALID_ENUM:
-				cout << "Error loading sequence: GL_INVALID_ENUM" << endl;
-				return 1;
-			case GL_INVALID_VALUE:
-				cout << "Error loading sequence: GL_INVALID_VALUE" << endl;
-				return 1;
-			case GL_INVALID_OPERATION:
-				cout << "Error loading sequence: GL_INVALID_OPERATION" << endl;
-				return 1;
-			case GL_INVALID_FRAMEBUFFER_OPERATION:
-				cout << "Error loading sequence: GL_INVALID_FRAMEBUFFER_OPERATION" << endl;
-				return 1;
-			case GL_OUT_OF_MEMORY:
-				cout << "Error loading sequence: GL_OUT_OF_MEMORY" << endl;
-				return 1;
-			case GL_STACK_UNDERFLOW:
-				cout << "Error loading sequence: GL_STACK_UNDERFLOW" << endl;
-				return 1;
-			case GL_STACK_OVERFLOW:
-				cout << "Error loading sequence: GL_STACK_OVERFLOW" << endl;
-				return 1;
-			default:
-				break;
+		if( !(renderer->loadPixelArtSequence(sequence_name, sequence_count, sequence_fps))) {
+			return 1;
 		}
 
 	} else {
-		renderer->loadPixelArt(inputPath.c_str());
+		if(!(renderer->loadPixelArt(inputPath.c_str())))
+			return 1;
 	}
 		
 	if(!renderer->initConstructionContent()) {

@@ -12,13 +12,19 @@
 #include "Image.h"
 #define  FREEIMAGE_LIB
 #include "FreeImage.h"
+#include <iostream>
 
-Image::Image(const char *image_path, GLuint textureUnit) {
+Image::Image(const char *image_path, GLuint textureUnit, bool& success) {
+	success = true;
 	FreeImage_Initialise();
 	texture_unit = textureUnit;
 	// Load Texture
 	FREE_IMAGE_FORMAT image_format = FreeImage_GetFileType(image_path,0);
 	FIBITMAP* image_bgr = FreeImage_Load(image_format, image_path);
+	if (!image_bgr) {
+		fprintf(stdout, "Failed to load image %s", image_path);
+		success = false;
+	}
 	FIBITMAP* temp = image_bgr;
 	image_bgr = FreeImage_ConvertTo32Bits(image_bgr);
 	FreeImage_Unload(temp);
@@ -46,7 +52,6 @@ Image::Image(const char *image_path, GLuint textureUnit) {
 	glGenerateMipmap(GL_TEXTURE_2D);
 	glBindTexture(GL_TEXTURE_2D,0);
 }
-
 
 int Image::getWidth() {
 	return im_width;

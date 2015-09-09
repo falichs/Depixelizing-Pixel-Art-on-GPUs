@@ -86,9 +86,9 @@ public:
     * Use this to load a Pixel Art image from file.
     * @param filename Path to file.
     */
-	void loadPixelArt(const char* filename);
+	bool loadPixelArt(const char* filename);
 
-	GLenum loadPixelArtSequence(const std::string filename, int count, float fps);
+	bool loadPixelArtSequence(const std::string filename, int count, float fps);
 	//void sequenceStepFrame();
 	void sequenceLoadFrame(double time);
 
