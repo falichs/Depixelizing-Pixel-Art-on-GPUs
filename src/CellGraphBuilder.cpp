@@ -372,7 +372,9 @@ void CellGraphBuilder::computeOptimizedPositions() {
 int CellGraphBuilder::initDebug() {
 	//shader
 	m_programID_dbgDraw_fullCellGraph = LoadShaders(PA_SHADER_VS_CELLGRAPH_DRAW, PA_SHADER_GS_CELLGRAPH_DRAW, PA_SHADER_FS_CELLGRAPH_DRAW);
-	
+	if (!m_programID_dbgDraw_fullCellGraph)
+		return -1;
+
 	//uniforms
 	m_uniformID_dbgDraw_fullCellGraph_indexedCellPositions = glGetUniformLocation(m_programID_dbgDraw_fullCellGraph, "indexedCellPositions");
 	m_uniformID_dbgDraw_fullCellGraph_pixelArtDimensions = glGetUniformLocation(m_programID_dbgDraw_fullCellGraph, "pixelArtDimensions");

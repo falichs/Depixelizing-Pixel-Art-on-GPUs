@@ -286,6 +286,9 @@ int PixelArtRenderer::initGraphics()
 		fprintf(stderr, "Failed to initialize GLEW\n");
 		return -1;
 	}
+	fprintf(stdout, "GL_RENDERER   = %s\n", (char *)glGetString(GL_RENDERER));
+	fprintf(stdout, "GL_VERSION    = %s\n", (char *)glGetString(GL_VERSION));
+	fprintf(stdout, "GL_VENDOR     = %s\n", (char *)glGetString(GL_VENDOR));
 	if (GLEW_VERSION_3_3)
 	{
 		fprintf(stdout, "OpenGL 3.3 is supported!\n");

@@ -62,6 +62,8 @@ int GaussRasterizer::init() {
 
 	//Shaders
 	m_programID_gaussRasterizer = LoadShaders( PA_SHADER_VS_RASTERIZER, PA_SHADER_FS_RASTERIZER);
+	if (!m_programID_gaussRasterizer)
+		return -1;
 	m_uniformID_gaussRasterizer_pixelArt = glGetUniformLocation(m_programID_gaussRasterizer, "pixelArt");
 	m_uniformID_gaussRasterizer_indexedCellPositions = glGetUniformLocation(m_programID_gaussRasterizer, "indexedCellPositions");
 	m_uniformID_gaussRasterizer_neighborIndices = glGetUniformLocation(m_programID_gaussRasterizer, "neighborIndices");
