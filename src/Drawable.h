@@ -17,7 +17,7 @@
  * Header file defining the Drawable interface.
  */
 
-#include <GL\glew.h>
+#include <GL/glew.h>
 /**
 * The Drawable interface.
 * Classes derived from this interface can be plugged into the PixelArtRenderer
