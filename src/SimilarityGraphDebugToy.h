@@ -6,7 +6,7 @@
  * Header file defining the SimilarityGraphDebugToy DEBUG class.
  */
 
-#include <GL\glew.h>
+#include <GL/glew.h>
 
 class Image;
 class SimilarityGraphBuilder;

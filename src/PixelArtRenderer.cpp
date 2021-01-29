@@ -12,14 +12,14 @@
 #include "PixelArtRenderer.h"
 #include <stdio.h>
 #include <stdlib.h>
+#include <math.h>
 
-#include <minmax.h>
 //#include <vector>
 #include <deque>
 #include <sstream>
 #include <iomanip>
 
-#include "image.h"
+#include "Image.h"
 #include "Shader.h"
 #include "SimilarityGraphBuilderFS.h"
 #include "VoronoiCellGraph3x3.h"
@@ -188,7 +188,7 @@ void PixelArtRenderer::setZoom(double lastFrameTime) {
 	m_simGraphDebugToy->setZoom(m_zoom_factor_smoothed, m_zoom_window_position_x_smoothed, m_zoom_window_position_y_smoothed);
 	m_voronoiCellGraph3x3->setZoom(m_zoom_factor_smoothed, m_zoom_window_position_x_smoothed, m_zoom_window_position_y_smoothed);
 	m_cellGraphBuilder->setZoom(m_zoom_factor_smoothed, m_zoom_window_position_x_smoothed, m_zoom_window_position_y_smoothed);
-	//fprintf_s(stdout, "ZOOM: %f,%f,%f\n",m_zoom_factor,m_zoom_window_position_x,m_zoom_window_position_y);
+	//fprintf(stdout, "ZOOM: %f,%f,%f\n",m_zoom_factor,m_zoom_window_position_x,m_zoom_window_position_y);
 }
 
 PixelArtRenderer::PixelArtRenderer() {
@@ -355,7 +355,7 @@ void PixelArtRenderer::sequenceLoadFrame(double time) {
 		m_voronoiCellGraph3x3->setPixelArt(m_img_vector.at(ID));
 		m_gaussRasterizer->setPixelArt(m_img_vector.at(ID));
 	}
-	//fprintf_s(stdout, "m_sequence_fps=%f.\n",m_sequence_fps); 
+	//fprintf(stdout, "m_sequence_fps=%f.\n",m_sequence_fps); 
 }
 
 /*
@@ -464,17 +464,17 @@ void PixelArtRenderer::saveFrame() {
 	FIBITMAP* image = FreeImage_ConvertFromRawBits(pixels, window_width, window_heigth, 4 * window_width, 32,0x0000FF00 , 0x00FF0000, 0xFF000000 , false);
 	if (!image)
 	{
-		fprintf_s(stderr, "Cannot read bits from framebuffer.\n");
+		fprintf(stderr, "Cannot read bits from framebuffer.\n");
 	}
 	else 
 	{
 		if (FreeImage_Save(FIF_PNG, image, "frame.png", PNG_DEFAULT))
 		{
-			fprintf_s(stdout, "Frame saved to ./frame.png\n");
+			fprintf(stdout, "Frame saved to ./frame.png\n");
 		}
 		else
 		{
-			fprintf_s(stderr, "Could not save frame to ./frame.png\n");
+			fprintf(stderr, "Could not save frame to ./frame.png\n");
 		}
 	}
 	

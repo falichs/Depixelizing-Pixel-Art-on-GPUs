@@ -142,7 +142,7 @@ int main( int argc, char* argv[] )
 		if ( currentTime - lastTime >= 1.0 ){ // If last prinf() was more than 1 sec ago
 			// printf and reset timer
 			char title[100];
-			sprintf_s(title,100, "Depixelizing PixelArt On GPU - %f ms/frame - ", 1000.0/double(nbFrames) );
+			snprintf(title,100, "Depixelizing PixelArt On GPU - %f ms/frame - ", 1000.0/double(nbFrames) );
 			glfwSetWindowTitle(renderer->getWindow(), title);
 			nbFrames = 0;
 			lastTime += 1.0;
