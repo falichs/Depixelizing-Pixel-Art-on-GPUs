@@ -115,11 +115,13 @@ int SimilarityGraphBuilderFS::init() {
 	if (!m_programID_indifferentColors)
 		return -1;
 	m_programID_valenceUpdate = LoadShaders(PA_SHADER_VS_QUAD, PA_SHADER_FS_UPDATE_VALENCE);
+	if (!m_programID_valenceUpdate)
+		return -1;
 	m_programID_eliminateCrossingDiagonals = LoadShaders(PA_SHADER_VS_QUAD, PA_SHADER_FS_ELIMINATE_CROSSINGS);
+	if (!m_programID_eliminateCrossingDiagonals)
+		return -1;
 		
 	m_uniformID_indifferentColors_pixelArt = glGetUniformLocation(m_programID_indifferentColors, "pixelArt");
-	if (!m_uniformID_indifferentColors_pixelArt)
-		return -1;
 	m_uniformID_valenceUpdate_similarityGraph = glGetUniformLocation(m_programID_valenceUpdate, "similarityGraph");
 	m_uniformID_eliminateCrossingDiagonals_similarityGraph = glGetUniformLocation(m_programID_eliminateCrossingDiagonals, "similarityGraph");
 		

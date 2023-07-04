@@ -20,7 +20,6 @@
 // Input vertex data
 layout(location = 0) in vec2 pos;
 layout(location = 1) in int flags;
-in int gl_VertexID;
 
 //output vertex data
 out vec2 optimizedPos;
